@@ -1,0 +1,23 @@
+/**
+ * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
+ */
+
+.icon-48-album { 
+	background-image: url(../images/icon-48-album.png); 
+}
+
+.icon-16-gallery {
+	background-image: url(../images/icon-16-gallery.png); 
+}
+.icon-48-gallery { 
+	background-image: url(../images/icon-48-gallery.png); 
+}
+
+.icon-48-edit { 
+	background-image: url(../images/icon-48-edit.png); 
+}
+
+.icon-48-options { 
+	background-image: url(../images/icon-48-options.png); 
+}

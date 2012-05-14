@@ -1,0 +1,164 @@
+/**
+ * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
+ */
+
+#flashSettings {
+	font-size: 11px;
+	height: 24em;
+	overflow: hidden;
+	background: #f4f5f6;
+	cursor: default;
+	margin: 3px;
+	margin-bottom: 20px;
+}
+#flashSettings * {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#flashSettings .align-left {
+	float: left;
+}
+#flashSettings .clear {
+	clear: both;
+}
+
+#flashSettings label,
+#flashSettings input,
+#flashSettings select,
+#flashSettings button {
+	vertical-align: middle;
+}
+
+#flashSettings table.options {
+	margin: 0 0.75em 0 0;
+}
+#flashSettings table.options td.option-value {
+	height: 3.5em;
+}
+#flashSettings table.options td.option-name {
+	padding-right: 1em;
+}
+#flashSettings table.options td.option-value {
+	padding-right: 2em;
+}
+#flashSettings table.options label span {
+	white-space: nowrap;
+}
+
+#flashSettings input.color,
+#flashSettings input.image,
+#flashSettings input.int,
+#flashSettings input.text,
+#flashSettings input.sound,
+#flashSettings select,
+#flashSettings textarea {
+	color: #000;
+	border: 1px solid #ccc;
+}
+#flashSettings input.int {
+	width: 4em;
+}
+#flashSettings input.color {
+	font-family: "Lucida Console", Monaco, monospace;
+	width: 5em;
+	text-align: center;
+}
+#flashSettings input.image,
+#flashSettings input.sound {
+	width: 12em;
+}
+
+#flashSettings input[readonly],
+#flashSettings input.readonly,
+#flashSettings input[disabled],
+#flashSettings input.readonly {
+	background: #eee;
+	color: #777;
+	cursor: default;
+}
+
+#flashSettings input.checkbox {
+	vertical-align: middle;
+}
+
+#flashSettings option {
+}
+#flashSettings option[value=custom] {
+	font-weight: bold;
+}
+
+
+#flashSettings label.url {
+	margin-left: -0.5em;
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+}
+
+#flashSettings .slider {
+	position: relative;
+	height: 3em;
+	width: 100px;
+	top: -0.33em;
+}
+#flashSettings .slider .value {
+	position: absolute;
+	left: -1.5em;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+#flashSettings .slider .value input {
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 3em;
+	text-align: center;
+	border: none;
+	background: none;
+	color: #000;
+	cursor: default;
+}
+#flashSettings .slider .control {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#flashSettings .ui-slider-horizontal {
+	background-color: transparent;
+	background: url(../images/slider.gif) repeat-x center top;
+	border: none;
+	height: 20px;
+}
+#flashSettings .ui-slider-horizontal .ui-slider-handle {
+	background-color: transparent;
+	background: url(../images/slider-handle.gif) no-repeat center bottom;
+	border: none;
+	height: 20px;
+	cursor: pointer;
+}
+
+#flashSettings .colorPicker {
+	position: absolute;
+	z-index: 25;
+	padding: 0.5em;
+	background: #fff;
+	margin-left: -70px;
+	//margin-left: -140px;
+	//margin-top: 1.5em;
+	border: 1px solid #ccc;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+#flashSettings .colorPicker .close {
+	cursor: pointer !important;
+	position: absolute;
+	text-align: center;
+	right: 7px;
+	z-index: 27;
+}

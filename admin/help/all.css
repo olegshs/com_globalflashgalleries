@@ -1,0 +1,67 @@
+/**
+ * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
+ */
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #fff;
+	color: #333;
+}
+ul, ol {
+	margin: 0.5em 0;
+	padding: 0;
+}
+li {
+	margin: 0.5em 0 0.25em 2em;
+	padding: 0;
+}
+a {
+	color: #36c;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+code {
+	font-family: Consolas, Monaco, "Lucida Console", monospace;
+	white-space: nowrap;
+}
+
+.navigation {
+	float: right;
+	margin: 20px;
+	font-family: Verdana, sans-serif;
+}
+.navigation a {
+	margin: 0 0.5em;
+	font-size: 68.75%;
+}
+
+h1 {
+	font-size: 125%;
+	margin: 0 0 0.5em;
+	padding: 15px 0.8em 20px 64px;
+	background: #eee url(../images/icon-48-help.png) no-repeat 10px center;
+	color: #999;
+}
+h1 a {
+	color: #999;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+h1 a:active {
+	border-bottom: none;
+}
+
+.content {
+	padding: 0.5em 1em 2em;
+	font-size: 87.5%;
+}
+.content h2 {
+	margin: 0 0 0.5em;
+}
+.content h3 {
+	margin: 1.5em 0 0.5em 0;
+}

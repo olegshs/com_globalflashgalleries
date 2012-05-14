@@ -1,0 +1,277 @@
+<ul>
+	<li><a href="#gallery">{`Gallery`}</a></li>
+	<li><a href="#caption">{`Caption`}</a></li>
+	<li><a href="#buttons">{`Buttons`}</a></li>
+	<li><a href="#slideshow">{`Slideshow`}</a></li>
+	<li><a href="#rotation">{`Rotation`}</a></li>
+	<li><a href="#panel">{`Panel`}</a></li>
+	<li><a href="#sounds">{`Sounds`}</a></li>
+	<li><a href="#font">{`Font`}</a></li>
+	<li><a href="#translation">{`Translation`}</a></li>
+</ul>
+<div id="gallery">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="initialState" title="{initialState.description}">{initialState.title}</label></td>
+			<td class="option-value">{initialState.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="imageScaleMode" title="{imageScaleMode.description}">{imageScaleMode.title}</label></td>
+			<td class="option-value">{imageScaleMode.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="cacheRadius" title="{cacheRadius.description}">{cacheRadius.title}</label></td>
+			<td class="option-value">{cacheRadius.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="frameColor" title="{frameColor.description}">{frameColor.title}</label></td>
+			<td class="option-value">{frameColor.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="frameSize" title="{frameSize.description}">{frameSize.title}</label></td>
+			<td class="option-value">{frameSize.input}</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="option-value"><label for="dropShadow" title="{dropShadow.description}"><span>{dropShadow.input} {dropShadow.title}</span></label></td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="backgroundColor" title="{backgroundColor.description}">{backgroundColor.title}</label></td>
+			<td class="option-value">{backgroundColor.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="cornerRadius" title="{cornerRadius.description}">{cornerRadius.title}</label></td>
+			<td class="option-value">{cornerRadius.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="caption">
+	<table class="options">
+		<tr>
+			<td class="option-name"><label for="showCaption" title="{showCaption.description}">{showCaption.title}</label></td>
+			<td class="option-value">{showCaption.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="captionBackgroundCornerRadius" title="{captionBackgroundCornerRadius.description}">{captionBackgroundCornerRadius.title}</label></td>
+			<td class="option-value">{captionBackgroundCornerRadius.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="captionBackgroundAlpha" title="{captionBackgroundAlpha.description}">{captionBackgroundAlpha.title}</label></td>
+			<td class="option-value">{captionBackgroundAlpha.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="buttons">
+	<table class="options">
+		<tr>
+			<td class="option-name"><label for="showButtons" title="{showButtons.description}">{showButtons.title}</label></td>
+			<td class="option-value">{showButtons.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-value">
+				<label for="showAlbumsButton" title="{showAlbumsButton.description}"><span>{showAlbumsButton.input}
+				{showAlbumsButton.title}</span></label>
+			</td>
+			<td class="option-value">
+				<label for="showThumbnailsButton" title="{showThumbnailsButton.description}"><span>{showThumbnailsButton.input}
+				{showThumbnailsButton.title}</span></label>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="showSlideshowButton" title="{showSlideshowButton.description}"><span>{showSlideshowButton.input}
+				{showSlideshowButton.title}</span></label>
+			</td>
+			<td>
+				<label for="showNavigationButton" title="{showNavigationButton.description}"><span>{showNavigationButton.input}
+				{showNavigationButton.title}</span></label>
+			</td>
+		</tr>
+	</table>
+	<table class="options">
+		<tr>
+			<td><label for="buttonsBackgroundAlpha" title="{buttonsBackgroundAlpha.description}">{buttonsBackgroundAlpha.title}</label></td>
+			<td>{buttonsBackgroundAlpha.input}</td>
+		</tr>
+		<tr>
+			<td><label for="buttonsBackgroundCornerRadius" title="{buttonsBackgroundCornerRadius.description}">{buttonsBackgroundCornerRadius.title}</label></td>
+			<td>{buttonsBackgroundCornerRadius.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="slideshow">
+	<table class="options">
+		<tr>
+			<td class="option-name"><label for="slideshowDelay" title="{slideshowDelay.description}">{slideshowDelay.title}</label></td>
+			<td class="option-value">{slideshowDelay.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="rotation">
+	<table class="options">
+		<tr>
+			<td class="option-value">
+				<label for="useRotation" title="{useRotation.description}"><span>{useRotation.input}
+				{useRotation.title}</span></label>
+			</td>
+			<td class="option-value">
+				<span style="white-space:nowrap;"><label for="rotationDuration" title="{rotationDuration.description}">{rotationDuration.title}</label>
+				{rotationDuration.input} ms.</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="option-value" colspan="2">
+				<label for="rotationDirection" title="{rotationDirection.description}">{rotationDirection.title}</label>
+				{rotationDirection.input}
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="panel">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="iconPadding" title="{iconPadding.description}">{iconPadding.title}</label></td>
+			<td class="option-value">{iconPadding.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="panelBackgroundAlpha" title="{panelBackgroundAlpha.description}">{panelBackgroundAlpha.title}</label></td>
+			<td class="option-value">{panelBackgroundAlpha.input}</td>
+		</tr>
+	</table>
+	<table class="options">
+		<tr>
+			<td class="option-value">
+				<span style="white-space:nowrap;"><label for="iconWidth" title="{iconWidth.description}">{iconWidth.title}</label>
+				{iconWidth.input}</span>
+			</td>
+			<td class="option-value">
+				<span style="white-space:nowrap;"><label for="iconHeight" title="{iconHeight.description}">{iconHeight.title}</label>
+				{iconHeight.input}</span>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="sounds">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="clickSound" title="{clickSound.description}">{clickSound.title}</label></td>
+			<td class="option-value">{clickSound.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="rotationSound" title="{rotationSound.description}">{rotationSound.title}</label></td>
+			<td class="option-value">{rotationSound.input}</td>
+		</tr>
+	</table>
+	<table class="options">
+		<tr>
+			<td class="option-name"><label for="overSound" title="{overSound.description}">{overSound.title}</label></td>
+			<td class="option-value">{overSound.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="font">
+	<table class="options">
+		<tr>
+			<td class="option-value" colspan="2">
+				<label for="useEmbeddedFont" title="{useEmbeddedFont.description}"><span>{useEmbeddedFont.input}
+				{useEmbeddedFont.title}</span></label>
+			</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="fontName" title="{fontName.description}">{fontName.title}</label></td>
+			<td class="option-value">{fontName.input}</td>
+		</tr>
+	</table>
+	<table class="options">
+		<tr>
+			<td class="option-name"><label for="fontSize" title="{fontSize.description}">{fontSize.title}</label></td>
+			<td class="option-value">{fontSize.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="translation">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="translation.Album" title="{translation.Album.description}">{translation.Album.title}</label></td>
+			<td class="option-value">{translation.Album.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="translation.Albums" title="{translation.Albums.description}">{translation.Albums.title}</label></td>
+			<td class="option-value">{translation.Albums.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="translation.BackToAlbums" title="{translation.BackToAlbums.description}">{translation.BackToAlbums.title}</label></td>
+			<td class="option-value">{translation.BackToAlbums.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="translation.Image" title="{translation.Image.description}">{translation.Image.title}</label></td>
+			<td class="option-value">{translation.Image.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="translation.Images" title="{translation.Images.description}">{translation.Images.title}</label></td>
+			<td class="option-value">{translation.Images.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="translation.Close" title="{translation.Close.description}">{translation.Close.title}</label></td>
+			<td class="option-value">{translation.Close.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="translation.LoadingImage" title="{translation.LoadingImage.description}">{translation.LoadingImage.title}</label></td>
+			<td class="option-value">{translation.LoadingImage.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="translation.Of" title="{translation.Of.description}">{translation.Of.title}</label></td>
+			<td class="option-value">{translation.Of.input}</td>
+		</tr>
+	</table>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+jQuery(document).ready(function($) {
+	$('#useRotation').change(function() {
+		if (this.checked)
+		{
+			$('#rotationDirection').attr('disabled', '');
+			$('#rotationDuration').attr('disabled', '');
+		}
+		else
+		{
+			$('#rotationDirection').attr('disabled', 'disabled');
+			$('#rotationDuration').attr('disabled', 'disabled');
+		}
+	});
+	
+	$('#useEmbeddedFont').change(function() {
+		if (this.checked)
+		{
+			$('#fontName').attr('disabled', 'disabled');
+			$('#fontSize').attr('disabled', 'disabled');
+		}
+		else
+		{
+			$('#fontName').attr('disabled', '');
+			$('#fontSize').attr('disabled', '');
+		}
+	});
+	
+	$('#useRotation').change();
+	$('#useEmbeddedFont').change();
+});
+//]]>
+</script>

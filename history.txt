@@ -1,0 +1,203 @@
+--- 0.7.2 ---
+14 May 2012
+
++ Updated galleries
++ Bugs fixed
+
+
+--- 0.7.1 ---
+29 Mar 2012
+
++ Ability to use images from Picasa and Flickr
++ Improved XML caching
++ Updated galleries
++ Bugs fixed
+
+
+--- 0.7.0 ---
+29 Feb 2012
+
++ New Cubic Gallery
+
+
+--- 0.6.6 ---
+2 Feb 2012
+
++ Updated PhotoFlow gallery
++ Bugs fixed
+
+
+--- 0.6.5 ---
+26 Dec 2011
+
++ Updated galleries
++ New JavaScript galleries
++ Bugs fixed
+
+
+--- 0.6.4 ---
+12 Dec 2011
+
++ French localization is now compatible with Joomla 1.7
++ Updated PhotoFlow gallery
++ Bugs fixed
+
+
+--- 0.6.3 ---
+5 Dec 2011
+
++ Updated galleries
++ New options in Art gallery: transitionEffect=squares, transitionDuration
+
+
+--- 0.6.2 ---
+13 Oct 2011
+
++ New 3D Gallery
+
+
+--- 0.6.1 ---
+15 Sep 2011
+
++ Lightbox feature for Line, PhotoFlow, 3D Wall
+
+
+--- 0.6.0 ---
+1 Sep 2011
+
++ Updated galleries
++ Background images
++ Options > Auto check for updates
++ Options > Quality of reduced images and thumbnails
+
+
+--- 0.5.2 ---
+22 Aug 2011
+
++ JavaScript gallery for browsers without Flash Player
++ New options in Art and Promo: Slideshow > Loop, Thumb Bar > Use Thumb Bar
++ Fixed bug with component upgrade in Joomla 1.6 and newer
++ Fixed bug with sliders
++ Fixed bug in Zen settings panel
+
+
+--- 0.5.1 ---
+27 Jul 2011
+
++ Updated galleries
++ Options
++ Reducing of large images
++ Generating thumbnails
++ XML caching
+
+
+--- 0.5.0 ---
+1 Jul 2011
+
++ Important security update!
++ Protection agianst XSS and CSRF
++ Shows what’s new then checking for updates
++ Improved PHP 4 compatibility
+
+
+--- 0.4.4 ---
+9 Jun 2011
+
++ Zen: Translation, Show Caption, Show Buttons
++ PhotoFlow: Multilingual Font
++ Updated galleries
+
+
+--- 0.4.3 ---
+20 May 2011
+
++ Checking available memory then resizing the images
++ Bugs fixed
+
+
+--- 0.4.2 ---
+13 May 2011
+
++ Better compatibility with IE
++ Bugs fixed
+
+
+--- 0.4.1 ---
+5 May 2011
+
++ New Line Gallery
++ AJAX-improvements in Add Images dialog
++ Minor bug fixes
+
+
+--- 0.4.0 ---
+19 Apr 2011
+
++ Updated galleries
++ Support for installation on the databases with no charset
+
+
+--- 0.3.6 ---
+4 Apr 2011
+
++ Bug fixed: color picker displayed incorrectly.
+
+
+--- 0.3.5 ---
+2 Mar 2011
+
++ Improved compatibility.
+
+
+--- 0.3.4 ---
+22 Feb 2011
+
++ Multiple albums in Zen gallery.
++ Sorting images in albums.
++ Preview images in albums.
+
+
+--- 0.3.3 ---
+7 Feb 2011
+
++ Joomla 1.6.0 compatibility.
++ Correct handling of transparent PNG images.
+
+
+--- 0.3.2 ---
+22 Dec 2010
+
++ Bug fixed: On some hosts the thumbnails are not displayed.
+
+
+--- 0.3.1 ---
+11 Nov 2010
+
++ Importing images from a directory
++ Minor bug fixes
+
+
+--- 0.3.0 ---
+8 Sep 2010
+
++ PHP 4 compatibility
++ Bug fixed: Some settings are not applied to PhotoFlow gallery.
+
+
+--- 0.2.9 ---
+15 Aug 2010
+
++ French translation
+
+
+--- 0.2.8 ---
+9 Aug 2010
+
++ Added new image properties: Link, Target
+
+
+--- 0.2.6 ---
+30 Jul 2010
+
++ Internationalization
++ Minor bug fixes

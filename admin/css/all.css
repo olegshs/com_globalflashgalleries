@@ -1,0 +1,570 @@
+/**
+ * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
+ */
+
+body.wait,
+body.wait * {
+	cursor: wait !important;
+}
+
+#toolbar-box .header small,			/* Khepri */
+#content-box .pagetitle small {		/* Bluestork */
+	color: #090;
+}
+
+#system-message ul {
+	margin-left: 0;
+}
+
+.com_globalflashgalleries {
+	min-height: 20em;
+	padding: 1px;
+}
+
+.com_globalflashgalleries .jpane-slider.content {
+	//position: relative;
+}
+
+.com_globalflashgalleries p {
+	margin: 0.67em 0;
+}
+
+.com_globalflashgalleries label,
+.com_globalflashgalleries input,
+.com_globalflashgalleries textarea,
+.com_globalflashgalleries select,
+.com_globalflashgalleries button {
+	display: inline;
+	float: none;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+.com_globalflashgalleries input.checkbox,
+.com_globalflashgalleries input[type=checkbox] {
+	border: none;
+}
+
+.com_globalflashgalleries label * {
+	vertical-align: middle !important;
+}
+
+.com_globalflashgalleries table.admintable {
+}
+.com_globalflashgalleries table.admintable th,
+.com_globalflashgalleries table.admintable td {
+	padding: 0.33em 0.5em;
+}
+
+.com_globalflashgalleries code {
+	font-family: Consolas, Monaco, "Lucida Console", monospace;
+}
+
+.com_globalflashgalleries .error {
+	color: #c00;
+}
+
+.com_globalflashgalleries input,
+.com_globalflashgalleries textarea,
+.com_globalflashgalleries button,
+.com_globalflashgalleries .button,
+.com_globalflashgalleries select {
+	font-family: Tahoma, sans-serif;
+	font-size: 100%;
+	text-decoration: none;
+}
+
+.com_globalflashgalleries input.text.readonly,
+.com_globalflashgalleries textarea.readonly,
+.com_globalflashgalleries input.int.readonly {
+	background: #f7f7f7;
+}
+
+.com_globalflashgalleries .button {
+	margin: 0 0.25em 0 0;
+	padding: 0.2em 0.7em 0.35em;
+	//padding: 0.15em 0 0.2em;
+	vertical-align: middle;
+	line-height: 1.4em;
+	font-size: 100%;
+	font-weight: normal;
+	color: #333;
+	background: #e0e0e0 url(../images/button.gif) repeat-x center -7px;
+	border: 1px solid #999;
+	outline: none;
+	cursor: pointer;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+	border-radius: 1em;
+	-moz-box-shadow: rgba(0,0,0,0.2) 1px 2px 4px;
+	-webkit-box-shadow: rgba(0,0,0,0.2) 1px 2px 4px;
+	-khtml-box-shadow: rgba(0,0,0,0.2) 1px 2px 4px;
+	box-shadow: rgba(0,0,0,0.2) 1px 2px 4px;
+	white-space: nowrap;
+}
+.com_globalflashgalleries a.button {
+	//padding: 0.2em 0.7em 0.35em;
+}
+.com_globalflashgalleries .button.big {
+	font-size: 133%;
+	padding: 0.25em 0.7em 0.35em;
+}
+.com_globalflashgalleries a.button.big {
+	//padding: 0.25em 0.7em 0.35em;
+}
+.com_globalflashgalleries .button.small {
+	padding: 0.05em 0.4em 0.15em;
+	//padding: 0 0.4em;
+	-moz-border-radius: 0.8em;
+	-webkit-border-radius: 0.8em;
+	-khtml-border-radius: 0.8em;
+	border-radius: 0.8em;
+}
+.com_globalflashgalleries .button:hover {
+	color: #000;
+	border-color: #777;
+	background: #eee url(../images/button.gif) repeat-x center -4px;
+}
+.com_globalflashgalleries .button:active {
+	position: relative;
+	top: 1px;
+	border-color: #555; 
+	background: #ddd url(../images/button.gif) repeat-x center -11px;
+	-moz-box-shadow: rgba(0,0,0,0.2) 1px 1px 2px;
+	-webkit-box-shadow: rgba(0,0,0,0.2) 1px 1px 2px;
+	-khtml-box-shadow: rgba(0,0,0,0.2) 1px 1px 2px;
+	box-shadow: rgba(0,0,0,0.2) 1px 1px 2px;
+}
+.com_globalflashgalleries .button.disabled,
+.com_globalflashgalleries .button[disabled] {
+	color: #bbb;
+	background: #f0f0f0;
+	border-color: #ccc;
+	cursor: default;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-khtml-box-shadow: none;
+	box-shadow: none;
+}
+
+.com_globalflashgalleries a.edit,
+.com_globalflashgalleries a.delete {
+	display: block;
+	float: left;
+	margin: 0 1em 0.5em 0;
+	background: no-repeat left center;
+	padding: 5px 0.5em 3px 22px;
+}
+.com_globalflashgalleries a.edit {
+	background-image: url(../images/edit.gif);
+}
+.com_globalflashgalleries a.delete {
+	background-image: url(../images/delete.gif);
+	padding-left: 20px;
+	margin-right: 0;
+}
+
+.com_globalflashgalleries input.color {
+	font-family: "Lucida Console", monospace;
+	width: 4.5em;
+	text-align: center;
+}
+.com_globalflashgalleries .colorPicker {
+	position: absolute;
+	z-index: 25;
+	padding: 0.5em;
+	background: #fff;
+	margin-left: -10px;
+	//margin-left: -80px;
+	//margin-top: 1.5em;
+	border: 1px solid #ccc;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+	border-radius: 1em;
+}
+.com_globalflashgalleries .colorPicker .close {
+	cursor: pointer !important;
+	position: absolute;
+	text-align: center;
+	right: 7px;
+	z-index: 27;
+}
+
+.com_globalflashgalleries .ui-tabs-selected a {
+	cursor: default !important;
+}
+
+
+.com_globalflashgalleries .component-upgrade {
+	margin: 20px;
+}
+
+.com_globalflashgalleries .component-galleries {
+	margin: 2em 0 2em -10px;
+}
+.com_globalflashgalleries .component-galleries img {
+	vertical-align: middle;
+	margin: 20px 10px;
+}
+.com_globalflashgalleries .copyright {
+	width: 480px;
+	margin: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.com_globalflashgalleries .copyright .gpl {
+	margin: 5px 0;
+	font-size: 10px;
+}
+.com_globalflashgalleries .copyright .l10n {
+	margin: 1em 0;
+}
+
+.com_globalflashgalleries .admintable table td {
+	font-size: 100%;
+}
+
+/*
+	Albums
+*/
+.com_globalflashgalleries.album-edit .items-bulk * {
+	vertical-align: middle;
+}
+.com_globalflashgalleries.album-edit .images .item .id {
+	cursor: move;
+}
+.com_globalflashgalleries.album-edit .images .item .preview {
+	text-align: center;
+}
+.com_globalflashgalleries.album-edit .images .item .preview img {
+	float: none;
+	max-width: 160px;
+}
+.com_globalflashgalleries.album-edit .images .item .preview .title {
+	font-size: 125%;
+	margin: 0.5em;
+	color: #fff;
+}
+.com_globalflashgalleries.album-edit .images .item .preview .white .title {
+	color: #000;
+}
+.com_globalflashgalleries.album-edit #album-add_items {
+	margin: 1em 0;
+	font-size: 11px;
+	min-height: 31em;
+	background: #f7f7f7;
+}
+.com_globalflashgalleries.album-edit #album-add_items .tab {
+	padding: 1.5em;
+}
+.com_globalflashgalleries.album-edit #album-add_items .tab .submit {
+	margin: 1em 0 0;
+	padding: 1.5em 0 0.5em;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .item {
+	position: relative;
+	float: left;
+	width: 33%;
+	min-width: 33em;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .item .inside {
+	margin: 0.5em 3em 2em 0;
+	padding: 1.5em 2.5em 1em 1em;
+	background: #fff;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+	border-radius: 8px;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .item table {
+	width: 100%;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .item th {
+	padding-right: 1em;
+	font-weight: normal;
+	width: 25%;
+	white-space: nowrap;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .item input.file {
+}
+.com_globalflashgalleries.album-edit #add_items-upload .item input.text {
+	width: 99%;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .item textarea {
+	width: 99%;
+	font-size: 85%;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .add {
+	clear: left;
+	margin: 1em 0 0;
+	padding: 0 0 1em 0;
+}
+.com_globalflashgalleries.album-edit #add_items-upload .limits {
+	margin-left: 1px;
+}
+.com_globalflashgalleries.album-edit #add_items-directory .name,
+.com_globalflashgalleries.album-edit #add_items-directory .notdelete {
+	margin: 1.5em 0;
+}
+.com_globalflashgalleries.album-edit #add_items-directory .name label {
+	padding: 0;
+}
+.com_globalflashgalleries.album-edit #add_items-directory .name input {
+	width: 20em;
+}
+.com_globalflashgalleries.album-edit #add_items-directory .notdelete label span {
+	vertical-align: top;
+}
+
+/* the overlayed element */
+.com_globalflashgalleries .preview .overlay {
+	display: none;
+	width: 640px;
+	padding: 35px;
+	font-size: 11px;
+	background-image: url(../images/overlay.white.png);
+}
+.com_globalflashgalleries .preview .overlay.black {
+	background-image: url(../images/overlay.black.png);
+}
+.com_globalflashgalleries .preview .overlay .close {
+	background-image: url(../images/overlay.close.png);
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+}
+
+/*
+	Galleries
+*/
+.com_globalflashgalleries.gallery-edit .pane-sliders {
+	position: static;
+}
+.com_globalflashgalleries.gallery-edit .images .item,
+.com_globalflashgalleries.gallery-edit .images .item-placeholder {
+	float: left;
+	width: 120px;
+	height: 120px;
+	padding: 20px;
+	margin: 0;
+}
+.com_globalflashgalleries.gallery-edit .images .item {
+	text-align: center;
+	background: url(../images/preview-120x120.png) no-repeat 12px 12px;
+}
+.com_globalflashgalleries.gallery-edit .images .item-placeholder {
+	background: url(../images/preview-120x120-placeholder.gif) no-repeat 20px 20px;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1px 0 2px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	visibility: hidden;	
+}
+.com_globalflashgalleries.gallery-edit .images .item .image:hover .title {
+	visibility: visible;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	visibility: hidden;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image:hover .menu {
+	visibility: visible;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu .menu-button {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 24px;
+	height: 25px;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	background: url(../images/gear.png) no-repeat center;
+	border: none !important;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu ul {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 12px;
+	margin: 0;
+	padding: 0.2em 0;
+	font-family: Verdana, sans-serif;
+	font-size: 10px !important;
+	opacity: 0.9;
+	visibility: hidden;
+	text-align: left;
+	list-style-type: none;
+	background-position: bottom;
+	background-color: #fff;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu:hover ul {
+	visibility: visible;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu li {
+	margin: 0;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu li a {
+	display: block;
+	padding: 0.25em 0.75em;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu li a:hover {
+	color: #c30;
+}
+.com_globalflashgalleries.gallery-edit .images .item .image .menu .last a {
+	border-bottom: none;
+}
+
+
+.com_globalflashgalleries .stats th {
+	text-align: left;
+}
+
+.com_globalflashgalleries #select-images-form {
+}
+.com_globalflashgalleries #select-images-form #select-albums {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.com_globalflashgalleries #select-images-form li.select-album {
+	clear: left;
+	margin: 15px 0 20px;
+}
+.com_globalflashgalleries #select-images-form input.select-album {
+	vertical-align: baseline;
+}
+.com_globalflashgalleries #select-images-form a.select-album {
+	font-size: 18px;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.com_globalflashgalleries #select-images-form .album-count {
+	font-size: 14px;
+	color: #555;
+}
+.com_globalflashgalleries #select-images-form .edit-album {
+	font-size: 10px;
+	margin: 0 0.5em;
+}
+.com_globalflashgalleries #select-images-form .edit-album a {
+	color: #777;
+}
+.com_globalflashgalleries #select-images-form .select-album-images {
+	margin: 10px 10px 10px 5px;
+	padding: 0;
+	display: none;
+}
+.com_globalflashgalleries #select-images-form .select-album-images li {
+	float: left;
+	width: 150px;
+	height: 110px;
+	overflow: hidden;
+	margin: 5px 15px 5px;
+}
+.com_globalflashgalleries #select-images-form .select-album-images li img {
+	max-width: 150px;
+}
+.com_globalflashgalleries #select-images-form .select-album-images label {
+	cursor: pointer;
+}
+.com_globalflashgalleries #select-images-form .select-image-preview {
+	display: block;
+	padding: 4px 0;
+	//padding: 2px 4px;
+}
+.com_globalflashgalleries #select-images-form .select-image {
+	white-space: nowrap;
+}
+.com_globalflashgalleries #select-images-form .select-image input {
+	vertical-align: middle;
+}
+.com_globalflashgalleries #select-images-form .select-image small {
+	font-size: 10px;
+}
+
+/*
+	Options
+*/
+.com_globalflashgalleries.component-options {
+	margin: 0;
+}
+.com_globalflashgalleries.component-options .option {
+	margin: 0.5em 0 1em;
+}
+.com_globalflashgalleries.component-options .option {
+}
+.com_globalflashgalleries.component-options .option .title {
+	font-size: 125%;
+}
+.com_globalflashgalleries.component-options .option .title,
+.com_globalflashgalleries.component-options .option input,
+.com_globalflashgalleries.component-options .option select {
+	vertical-align: middle;
+}
+.com_globalflashgalleries.component-options .option select {
+	font-size: 14px;
+}
+.com_globalflashgalleries.component-options .option input.checkbox {
+	margin: 0 3px 0 0;
+}
+.com_globalflashgalleries.component-options .option .description {
+	margin: 0 0 0 20px;
+}
+.com_globalflashgalleries.component-options .submit {
+	margin: 1.5em 0;
+}
+
+/*
+	What's new
+*/
+.com_globalflashgalleries .whatsnew {
+}
+.com_globalflashgalleries .whatsnew h2, h3 {
+	margin: 1em 0 0.3em;
+	padding: 0;
+}
+.com_globalflashgalleries .whatsnew ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.com_globalflashgalleries .whatsnew ul ul {
+	margin: 0 0 1em 3em;
+	padding: 0;
+	list-style: disc;
+}
+.com_globalflashgalleries .whatsnew li {
+	margin: 0.2em 0;
+	padding: 0;
+}

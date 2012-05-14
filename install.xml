@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" type="component" method="upgrade">
+	<name>Global Flash Galleries</name>
+	<creationDate>2010-06-01</creationDate>
+	<author>Mediaparts Interactive</author>
+	<authorEmail>joomla@flash-gallery.com</authorEmail>
+	<authorUrl>http://flash-gallery.com/</authorUrl>
+	<copyright>Copyright (c) 2010-2012 Mediaparts Interactive</copyright>
+	<license>GNU/GPL http://www.gnu.org/licenses/gpl.html</license>
+	<version>0.7.2</version>
+	<releaseDate>2012-05-14</releaseDate>
+	<releaseType>Minor update</releaseType>
+	<downloadUrl>http://flash-gallery.com/update/get/com_globalflashgalleries-0.7.2.zip</downloadUrl>
+	<description>Global Flash Galleries Component for Joomla!</description>
+
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.sql</file>
+			<file driver="mysql" charset="">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+			<file driver="mysql" charset="">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>defines.php</filename>
+		<filename>gallery.xml.php</filename>
+		<filename>globalflashgalleries.php</filename>
+		<filename>css/default.css</filename>
+		<filename>images/close.png</filename>
+		<filename>images/cubic-buttons.png</filename>
+		<filename>images/left.png</filename>
+		<filename>images/loader.gif</filename>
+		<filename>images/loader.png</filename>
+		<filename>images/right.png</filename>
+		<filename>images/zen-albums.png</filename>
+		<filename>images/zen-backToAlbums.png</filename>
+		<filename>images/zen-close.png</filename>
+		<filename>images/zen-next.png</filename>
+		<filename>images/zen-play.png</filename>
+		<filename>images/zen-prev.png</filename>
+		<filename>images/zen-thumbnails.png</filename>
+		<filename>inc/image.class.php</filename>
+		<filename>inc/options.class.php</filename>
+		<filename>inc/simplexml.class.php</filename>
+		<filename>inc/templates.class.php</filename>
+		<filename>inc/templates.if.php</filename>
+		<filename>inc/templates.tpl.php</filename>
+		<filename>inc/templates.true.php</filename>
+		<filename>inc/templates.var.php</filename>
+		<filename>inc/ui.class.php</filename>
+		<filename>js/altgallery.js</filename>
+		<filename>js/jquery/jquery.js</filename>
+		<filename>js/swfobject/expressInstall.swf</filename>
+		<filename>js/swfobject/swfobject.js</filename>
+		<filename>models/gallery.php</filename>
+		<filename>settings.xml/3dSlideshow.xml</filename>
+		<filename>settings.xml/3dWall.xml</filename>
+		<filename>settings.xml/Art.xml</filename>
+		<filename>settings.xml/Box.xml</filename>
+		<filename>settings.xml/Cubic.xml</filename>
+		<filename>settings.xml/Line.xml</filename>
+		<filename>settings.xml/PhotoFlow.xml</filename>
+		<filename>settings.xml/Promo.xml</filename>
+		<filename>settings.xml/StackPhoto.xml</filename>
+		<filename>settings.xml/Zen.xml</filename>
+		<filename>settings.xml.legacy/3dWall.xml</filename>
+		<filename>settings.xml.legacy/Art.xml</filename>
+		<filename>settings.xml.legacy/Box.xml</filename>
+		<filename>settings.xml.legacy/Line.xml</filename>
+		<filename>settings.xml.legacy/PhotoFlow.xml</filename>
+		<filename>settings.xml.legacy/Promo.xml</filename>
+		<filename>settings.xml.legacy/StackPhoto.xml</filename>
+		<filename>settings.xml.legacy/Zen.xml</filename>
+		<filename>swf/3dSlideshow.swf</filename>
+		<filename>swf/3dWall.swf</filename>
+		<filename>swf/Art.swf</filename>
+		<filename>swf/Box.swf</filename>
+		<filename>swf/Cubic.swf</filename>
+		<filename>swf/Line.swf</filename>
+		<filename>swf/PhotoFlow.swf</filename>
+		<filename>swf/Promo.swf</filename>
+		<filename>swf/StackPhoto.swf</filename>
+		<filename>swf/Zen.swf</filename>
+		<filename>tpl/xml/3dSlideshow.xml</filename>
+		<filename>tpl/xml/3dSlideshow-item.xml</filename>
+		<filename>tpl/xml/3dWall.xml</filename>
+		<filename>tpl/xml/3dWall-item.xml</filename>
+		<filename>tpl/xml/Art.xml</filename>
+		<filename>tpl/xml/Art-item.xml</filename>
+		<filename>tpl/xml/Box.xml</filename>
+		<filename>tpl/xml/Box-item.xml</filename>
+		<filename>tpl/xml/Cubic.xml</filename>
+		<filename>tpl/xml/Cubic-item.xml</filename>
+		<filename>tpl/xml/Line.xml</filename>
+		<filename>tpl/xml/Line-item.xml</filename>
+		<filename>tpl/xml/PhotoFlow.xml</filename>
+		<filename>tpl/xml/PhotoFlow-item.xml</filename>
+		<filename>tpl/xml/Promo.xml</filename>
+		<filename>tpl/xml/Promo-item.xml</filename>
+		<filename>tpl/xml/StackPhoto.xml</filename>
+		<filename>tpl/xml/StackPhoto-item.xml</filename>
+		<filename>tpl/xml/Zen.xml</filename>
+		<filename>tpl/xml/Zen-album.xml</filename>
+		<filename>tpl/xml/Zen-item.xml</filename>
+		<filename>tpl/xml.legacy/3dWall.xml</filename>
+		<filename>tpl/xml.legacy/3dWall-item.xml</filename>
+		<filename>tpl/xml.legacy/Art.xml</filename>
+		<filename>tpl/xml.legacy/Art-item.xml</filename>
+		<filename>tpl/xml.legacy/Box.xml</filename>
+		<filename>tpl/xml.legacy/Box-item.xml</filename>
+		<filename>tpl/xml.legacy/Line.xml</filename>
+		<filename>tpl/xml.legacy/Line-item.xml</filename>
+		<filename>tpl/xml.legacy/PhotoFlow.xml</filename>
+		<filename>tpl/xml.legacy/PhotoFlow-item.xml</filename>
+		<filename>tpl/xml.legacy/Promo.xml</filename>
+		<filename>tpl/xml.legacy/Promo-item.xml</filename>
+		<filename>tpl/xml.legacy/StackPhoto.xml</filename>
+		<filename>tpl/xml.legacy/StackPhoto-item.xml</filename>
+		<filename>tpl/xml.legacy/Zen.xml</filename>
+		<filename>tpl/xml.legacy/Zen-album.xml</filename>
+		<filename>tpl/xml.legacy/Zen-item.xml</filename>
+		<filename>views/gallery/view.html.php</filename>
+		<filename>views/gallery/view.raw.php</filename>
+		<filename>views/gallery/tmpl/default.php</filename>
+		<filename>views/gallery/tmpl/default.xml</filename>
+		<filename>views/xml/view.raw.php</filename>
+		<filename>views/xml/tmpl/default.php</filename>
+	</files>
+
+	<administration>
+		<menu img="components/com_globalflashgalleries/images/icon-16-gallery.png">Flash Galleries</menu>
+		<submenu>
+			<menu controller="galleries" img="galleries.png">Galleries</menu>
+			<menu controller="albums" img="albums.png">Albums</menu>
+			<menu controller="options" img="options.png">Options</menu>
+		</submenu>
+
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_globalflashgalleries.ini</language>
+			<language tag="en-GB">en-GB.com_globalflashgalleries.menu.ini</language>
+			<language tag="en-GB">en-GB.com_globalflashgalleries.sys.ini</language>
+			<language tag="fr-FR">fr-FR.com_globalflashgalleries.ini</language>
+			<language tag="fr-FR">fr-FR.com_globalflashgalleries.menu.ini</language>
+			<language tag="fr-FR">fr-FR.com_globalflashgalleries.sys.ini</language>
+			<language tag="ru-RU">ru-RU.com_globalflashgalleries.ini</language>
+			<language tag="ru-RU">ru-RU.com_globalflashgalleries.menu.ini</language>
+			<language tag="ru-RU">ru-RU.com_globalflashgalleries.sys.ini</language>
+		</languages>
+
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>defines.php</filename>
+			<filename>globalflashgalleries.php</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<filename>controllers/album.php</filename>
+			<filename>controllers/albums.php</filename>
+			<filename>controllers/component.php</filename>
+			<filename>controllers/galleries.php</filename>
+			<filename>controllers/gallery.php</filename>
+			<filename>controllers/image.php</filename>
+			<filename>controllers/options.php</filename>
+			<filename>css/all.css</filename>
+			<filename>css/gallery-settings.css</filename>
+			<filename>css/icons.css</filename>
+			<filename>css/farbtastic/farbtastic.css</filename>
+			<filename>css/farbtastic/marker.png</filename>
+			<filename>css/farbtastic/mask.png</filename>
+			<filename>css/farbtastic/wheel.png</filename>
+			<filename>css/jquery/jquery-ui.css</filename>
+			<filename>css/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png</filename>
+			<filename>css/jquery/images/ui-bg_flat_75_ffffff_40x100.png</filename>
+			<filename>css/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png</filename>
+			<filename>css/jquery/images/ui-bg_glass_65_ffffff_1x400.png</filename>
+			<filename>css/jquery/images/ui-bg_glass_75_dadada_1x400.png</filename>
+			<filename>css/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png</filename>
+			<filename>css/jquery/images/ui-bg_glass_95_fef1ec_1x400.png</filename>
+			<filename>css/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png</filename>
+			<filename>css/jquery/images/ui-icons_222222_256x240.png</filename>
+			<filename>css/jquery/images/ui-icons_2e83ff_256x240.png</filename>
+			<filename>css/jquery/images/ui-icons_454545_256x240.png</filename>
+			<filename>css/jquery/images/ui-icons_888888_256x240.png</filename>
+			<filename>css/jquery/images/ui-icons_cd0a0a_256x240.png</filename>
+			<filename>elements/flashgallery.php</filename>
+			<filename>help/albums.html</filename>
+			<filename>help/all.css</filename>
+			<filename>help/contents.html</filename>
+			<filename>help/galleries.html</filename>
+			<filename>help/gallery-settings.html</filename>
+			<filename>help/images.html</filename>
+			<filename>help/index.html</filename>
+			<filename>help/upgrade.html</filename>
+			<filename>images/button.gif</filename>
+			<filename>images/delete.gif</filename>
+			<filename>images/edit.gif</filename>
+			<filename>images/gear.png</filename>
+			<filename>images/icon-16-gallery.png</filename>
+			<filename>images/icon-48-album.png</filename>
+			<filename>images/icon-48-edit.png</filename>
+			<filename>images/icon-48-gallery.png</filename>
+			<filename>images/icon-48-help.png</filename>
+			<filename>images/icon-48-options.png</filename>
+			<filename>images/loader.gif</filename>
+			<filename>images/overlay.black.png</filename>
+			<filename>images/overlay.close.png</filename>
+			<filename>images/overlay.white.png</filename>
+			<filename>images/preview-120x120.png</filename>
+			<filename>images/preview-120x120-placeholder.gif</filename>
+			<filename>images/slider.gif</filename>
+			<filename>images/slider-handle.gif</filename>
+			<filename>images/transparent.gif</filename>
+			<filename>images/galleries/3dSlideshow.png</filename>
+			<filename>images/galleries/3dWall.png</filename>
+			<filename>images/galleries/Art.png</filename>
+			<filename>images/galleries/Box.png</filename>
+			<filename>images/galleries/Cubic.png</filename>
+			<filename>images/galleries/Line.png</filename>
+			<filename>images/galleries/PhotoFlow.png</filename>
+			<filename>images/galleries/Promo.png</filename>
+			<filename>images/galleries/StackPhoto.png</filename>
+			<filename>images/galleries/Zen.png</filename>
+			<filename>inc/directory.class.php</filename>
+			<filename>inc/image.class.php</filename>
+			<filename>inc/options.class.php</filename>
+			<filename>inc/services_json.class.php</filename>
+			<filename>inc/simplexml.class.php</filename>
+			<filename>inc/templates.class.php</filename>
+			<filename>inc/templates.if.php</filename>
+			<filename>inc/templates.tpl.php</filename>
+			<filename>inc/templates.translate.php</filename>
+			<filename>inc/templates.true.php</filename>
+			<filename>inc/templates.var.php</filename>
+			<filename>inc/tools.class.php</filename>
+			<filename>inc/ui.class.php</filename>
+			<filename>js/farbtastic.js</filename>
+			<filename>js/gallery-settings.js</filename>
+			<filename>js/jquery/jquery.js</filename>
+			<filename>js/jquery/jquery-ui.js</filename>
+			<filename>js/jquery-tools/overlay.apple.js</filename>
+			<filename>js/jquery-tools/overlay.js</filename>
+			<filename>js/jquery-tools/toolbox.expose.js</filename>
+			<filename>js/swfobject/expressInstall.swf</filename>
+			<filename>js/swfobject/swfobject.js</filename>
+			<filename>js/swfupload/swfupload.cookies.js</filename>
+			<filename>js/swfupload/swfupload.js</filename>
+			<filename>js/swfupload/swfupload.queue.js</filename>
+			<filename>js/swfupload/swfupload.speed.js</filename>
+			<filename>js/swfupload/swfupload.swf</filename>
+			<filename>js/swfupload/swfupload.swfobject.js</filename>
+			<filename>language/en-GB.com_globalflashgalleries.ini</filename>
+			<filename>language/en-GB.com_globalflashgalleries.menu.ini</filename>
+			<filename>language/en-GB.com_globalflashgalleries.sys.ini</filename>
+			<filename>language/fr-FR.com_globalflashgalleries.ini</filename>
+			<filename>language/fr-FR.com_globalflashgalleries.menu.ini</filename>
+			<filename>language/fr-FR.com_globalflashgalleries.sys.ini</filename>
+			<filename>language/ru-RU.com_globalflashgalleries.ini</filename>
+			<filename>language/ru-RU.com_globalflashgalleries.menu.ini</filename>
+			<filename>language/ru-RU.com_globalflashgalleries.sys.ini</filename>
+			<filename>models/album.php</filename>
+			<filename>models/albums.php</filename>
+			<filename>models/galleries.php</filename>
+			<filename>models/gallery.php</filename>
+			<filename>models/image.php</filename>
+			<filename>tables/album.php</filename>
+			<filename>tables/gallery.php</filename>
+			<filename>tables/image.php</filename>
+			<filename>tables/settings.php</filename>
+			<filename>tpl/color.html</filename>
+			<filename>tpl/slider.html</filename>
+			<filename>tpl/settings/3dSlideshow.html</filename>
+			<filename>tpl/settings/3dWall.html</filename>
+			<filename>tpl/settings/Art.html</filename>
+			<filename>tpl/settings/Box.html</filename>
+			<filename>tpl/settings/Cubic.html</filename>
+			<filename>tpl/settings/Line.html</filename>
+			<filename>tpl/settings/PhotoFlow.html</filename>
+			<filename>tpl/settings/Promo.html</filename>
+			<filename>tpl/settings/StackPhoto.html</filename>
+			<filename>tpl/settings/Zen.html</filename>
+			<filename>tpl/settings.legacy/3dWall.html</filename>
+			<filename>tpl/settings.legacy/Art.html</filename>
+			<filename>tpl/settings.legacy/Box.html</filename>
+			<filename>tpl/settings.legacy/Line.html</filename>
+			<filename>tpl/settings.legacy/PhotoFlow.html</filename>
+			<filename>tpl/settings.legacy/Promo.html</filename>
+			<filename>tpl/settings.legacy/StackPhoto.html</filename>
+			<filename>tpl/settings.legacy/Zen.html</filename>
+			<filename>views/album/view.html.php</filename>
+			<filename>views/album/tmpl/default.php</filename>
+			<filename>views/album/tmpl/items.php</filename>
+			<filename>views/album/tmpl/stats.php</filename>
+			<filename>views/album/tmpl/add/archive.php</filename>
+			<filename>views/album/tmpl/add/directory.php</filename>
+			<filename>views/album/tmpl/add/media.php</filename>
+			<filename>views/album/tmpl/add/swfupload.php</filename>
+			<filename>views/album/tmpl/add/upload.php</filename>
+			<filename>views/album/tmpl/add/url.php</filename>
+			<filename>views/albums/view.html.php</filename>
+			<filename>views/albums/view.raw.php</filename>
+			<filename>views/albums/tmpl/default.php</filename>
+			<filename>views/albums/tmpl/select.php</filename>
+			<filename>views/checkupdates/view.html.php</filename>
+			<filename>views/checkupdates/tmpl/default.php</filename>
+			<filename>views/galleries/view.html.php</filename>
+			<filename>views/galleries/tmpl/default.php</filename>
+			<filename>views/gallery/view.html.php</filename>
+			<filename>views/gallery/tmpl/default.php</filename>
+			<filename>views/gallery/tmpl/items.php</filename>
+			<filename>views/gallery/tmpl/preview.php</filename>
+			<filename>views/gallery/tmpl/settings.php</filename>
+			<filename>views/gallery/tmpl/stats.php</filename>
+			<filename>views/globalflashgalleries/view.html.php</filename>
+			<filename>views/globalflashgalleries/tmpl/default.php</filename>
+			<filename>views/image/view.html.php</filename>
+			<filename>views/image/tmpl/default.php</filename>
+			<filename>views/images/view.raw.php</filename>
+			<filename>views/images/tmpl/default.php</filename>
+			<filename>views/options/view.html.php</filename>
+			<filename>views/options/tmpl/default.php</filename>
+			<filename>views/upgrade/view.html.php</filename>
+			<filename>views/upgrade/tmpl/default.php</filename>
+		</files>
+	</administration>
+</install>

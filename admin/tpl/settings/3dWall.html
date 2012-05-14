@@ -1,0 +1,207 @@
+<ul>
+	<li><a href="#gallery">{`Gallery`}</a></li>
+	<li><a href="#thumbnail">{`Thumbnail`}</a></li>
+	<li><a href="#image">{`Image`}</a></li>
+	<li><a href="#imageCaption">{`Image Caption`}</a></li>
+	<li><a href="#lightbox">{`Lightbox`}</a></li>
+	<li><a href="#preloader">{`Preloader`}</a></li>
+	<li><a href="#picasa">Picasa</a></li>
+	<li><a href="#flickr">Flickr</a></li>
+</ul>
+<div id="gallery">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="zoom" title="{zoom.description}">{zoom.title}</label></td>
+			<td class="option-value">{zoom.input}</td>
+		</tr>
+		<tr id="visibleMatrix">
+			<td class="option-name"><label for="visibleMatrix.rows" title="{visibleMatrix.rows.description}">{visibleMatrix.rows.title}</label></td>
+			<td class="option-value">{visibleMatrix.rows.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-value">
+				<label for="showReflections" title="{showReflections.description}">{showReflections.input}
+				{showReflections.title}</label>
+			</td>
+		</tr>
+		<tr>
+			<td class="option-value">
+				<label for="useHighlight" title="{useHighlight.description}">{useHighlight.input}
+				{useHighlight.title}</label>
+			</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="reflectionAlpha" title="{reflectionAlpha.description}">{reflectionAlpha.title}</label></td>
+			<td class="option-value">{reflectionAlpha.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="scrollSpeed" title="{scrollSpeed.description}">{scrollSpeed.title}</label></td>
+			<td class="option-value">{scrollSpeed.input}</td>
+		</tr>
+	</table>
+
+</div>
+<div id="thumbnail">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="thumbnail.width" title="{thumbnail.width.description}">{thumbnail.width.title}</label></td>
+			<td class="option-value">{thumbnail.width.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="thumbnail.height" title="{thumbnail.height.description}">{thumbnail.height.title}</label></td>
+			<td class="option-value">{thumbnail.height.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="thumbnail.distance" title="{thumbnail.distance.description}">{thumbnail.distance.title}</label></td>
+			<td class="option-value">{thumbnail.distance.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="image">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="image.scaleMode" title="{image.scaleMode.description}">{image.scaleMode.title}</label></td>
+			<td class="option-value">{image.scaleMode.input}</td>
+		</tr>
+		<tr>
+			<td class="option-value" colspan="2">
+				<label for="image.thumbProportion" title="{image.thumbProportion.description}">{image.thumbProportion.input}
+				{image.thumbProportion.title}</label>
+			</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="image.bgColor" title="{image.bgColor.description}">{image.bgColor.title}</label></td>
+			<td class="option-value">{image.bgColor.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="image.bgAlpha" title="{image.bgAlpha.description}">{image.bgAlpha.title}</label></td>
+			<td class="option-value">{image.bgAlpha.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="imageCaption">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="imageCaption.visibleMode" title="{imageCaption.visibleMode.description}">{imageCaption.visibleMode.title}</label></td>
+			<td class="option-value">{imageCaption.visibleMode.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="imageCaption.position" title="{imageCaption.position.description}">{imageCaption.position.title}</label></td>
+			<td class="option-value">{imageCaption.position.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="imageCaption.fontName" title="{imageCaption.fontName.description}">{imageCaption.fontName.title}</label></td>
+			<td class="option-value">{imageCaption.fontName.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="imageCaption.fontSize" title="{imageCaption.fontSize.description}">{imageCaption.fontSize.title}</label></td>
+			<td class="option-value">{imageCaption.fontSize.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="imageCaption.color" title="{imageCaption.color.description}">{imageCaption.color.title}</label></td>
+			<td class="option-value">{imageCaption.color.input}</td>
+		</tr>
+	</table>
+	<table class="options">
+		<tr>
+			<td class="option-name"><label for="imageCaption.bgColor" title="{imageCaption.bgColor.description}">{imageCaption.bgColor.title}</label></td>
+			<td class="option-value">{imageCaption.bgColor.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="imageCaption.bgAlpha" title="{imageCaption.bgAlpha.description}">{imageCaption.bgAlpha.title}</label></td>
+			<td class="option-value">{imageCaption.bgAlpha.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="lightbox">
+	<table class="options align-left">
+		<tr>
+			<td class="option-value">
+				<label for="lightbox.useLightbox" title="{lightbox.useLightbox.description}"><span>{lightbox.useLightbox.input}
+				{lightbox.useLightbox.title}</span></label>
+			</td>
+			<td class="option-value">
+				<label for="lightbox.overrideLinks" title="{lightbox.overrideLinks.description}"><span>{lightbox.overrideLinks.input}
+				{lightbox.overrideLinks.title}</span></label>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="preloader">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="preloader.stripesAlpha" title="{preloader.stripesAlpha.description}">{preloader.stripesAlpha.title}</label></td>
+			<td class="option-value">{preloader.stripesAlpha.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="preloader.innerShadow" title="{preloader.innerShadow.description}">{preloader.innerShadow.title}</label></td>
+			<td class="option-value">{preloader.innerShadow.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="preloader.dropShadow" title="{preloader.dropShadow.description}">{preloader.dropShadow.title}</label></td>
+			<td class="option-value">{preloader.dropShadow.input}</td>
+		</tr>
+	</table>
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="preloader.barColor" title="{preloader.barColor.description}">{preloader.barColor.title}</label></td>
+			<td class="option-value">{preloader.barColor.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="preloader.barAlpha" title="{preloader.barAlpha.description}">{preloader.barAlpha.title}</label></td>
+			<td class="option-value">{preloader.barAlpha.input}</td>
+		</tr>
+	</table>
+	<table class="options">
+		<tr>
+			<td class="option-name"><label for="preloader.bgColor" title="{preloader.bgColor.description}">{preloader.bgColor.title}</label></td>
+			<td class="option-value">{preloader.bgColor.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="preloader.bgAlpha" title="{preloader.bgAlpha.description}">{preloader.bgAlpha.title}</label></td>
+			<td class="option-value">{preloader.bgAlpha.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="picasa">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="picasa.user" title="{picasa.user.description}">{picasa.user.title}</label></td>
+			<td class="option-value">{picasa.user.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="picasa.albumID" title="{picasa.albumID.description}">{picasa.albumID.title}</label></td>
+			<td class="option-value">{picasa.albumID.input}</td>
+		</tr>
+	</table>
+</div>
+<div id="flickr">
+	<table class="options align-left">
+		<tr>
+			<td class="option-name"><label for="flickr.userID" title="{flickr.userID.description}">{flickr.userID.title}</label></td>
+			<td class="option-value">{flickr.userID.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="flickr.photosetID" title="{flickr.photosetID.description}">{flickr.photosetID.title}</label></td>
+			<td class="option-value">{flickr.photosetID.input}</td>
+		</tr>
+		<tr>
+			<td class="option-name"><label for="flickr.tags" title="{flickr.tags.description}">{flickr.tags.title}</label></td>
+			<td class="option-value">{flickr.tags.input}</td>
+		</tr>
+	</table>
+</div>
