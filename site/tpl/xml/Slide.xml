@@ -28,13 +28,13 @@
 			<delay>{slideshow.delay}</delay>
 		</slideshow>
 		<translation>
+			<clickToView>{translation.clickToView}</clickToView>
 			<getLink>{translation.getLink}</getLink>
 			<shareWithFacebook>{translation.shareWithFacebook}</shareWithFacebook>
-			<startSlideshow>{translation.startSlideshow}</startSlideshow>
-			<fullscreenMode>{translation.fullscreenMode}</fullscreenMode>
 			<tweet>{translation.tweet}</tweet>
+			<startSlideshow>{translation.startSlideshow}</startSlideshow>
 			<stopSlideshow>{translation.stopSlideshow}</stopSlideshow>
-			<clickToView>{translation.clickToView}</clickToView>
+			<fullscreenMode>{translation.fullscreenMode}</fullscreenMode>
 		</translation>
 	</settings>
 	<items>{items}

@@ -47,7 +47,7 @@
 		</items>
 	</group>
 	<group name="caption">
-		<title>Image Caption</title>
+		<title>Caption</title>
 		<description>Image caption settings</description>
 		<items>
 			<param name="showCaption" default="true">
@@ -109,13 +109,54 @@
 			</param>
 		</items>
 	</group>
+	<group name="translation">
+		<title>Translation</title>
+		<description></description>
+		<items>
+			<param name="clickToView" default="Click to view">
+				<title>Click to view</title>
+				<description></description>
+				<input type="text" />
+			</param>
+			<param name="getLink" default="Get link">
+				<title>Get link</title>
+				<description></description>
+				<input type="text" />
+			</param>
+			<param name="shareWithFacebook" default="Share with Facebook">
+				<title>Share with Facebook</title>
+				<description></description>
+				<input type="text" />
+			</param>
+			<param name="tweet" default="Tweet">
+				<title>Tweet</title>
+				<description></description>
+				<input type="text" />
+			</param>
+			<param name="startSlideshow" default="Start slideshow">
+				<title>Start slideshow</title>
+				<description></description>
+				<input type="text" />
+			</param>
+			<param name="stopSlideshow" default="Stop slideshow">
+				<title>Stop slideshow</title>
+				<description></description>
+				<input type="text" />
+			</param>
+			<param name="fullscreenMode" default="Fullscreen mode">
+				<title>Fullscreen mode</title>
+				<description></description>
+				<input type="text" />
+			</param>
+		</items>
+	</group>
 	<group name="picasa">
 		<title>Picasa</title>
 		<description>Using images from picasa.com</description>
 		<items>
 			<param name="user" default="">
 				<title>User</title>
-				<description>Login</description>
+				<description>Username or ID</description>
 				<input type="text" />
 			</param>
 			<param name="albumID" default="">

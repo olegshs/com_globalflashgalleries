@@ -33,6 +33,7 @@ defined('_JEXEC') or die('Restricted access');
 								'Line' =>		'Line Gallery',
 								'PhotoFlow' =>	'PhotoFlow Gallery',
 								'Promo' =>		'Promo Gallery',
+								'Slide' =>		'Slide Gallery',
 								'StackPhoto' =>	'Stack Gallery',
 								'Zen' =>		'Zen Gallery'
 							),
