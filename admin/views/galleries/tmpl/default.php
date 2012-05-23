@@ -45,8 +45,8 @@ defined('_JEXEC') or die('Restricted access');
 			<td style="font-size:115%;"><strong><a href="<?php echo $link; ?>" title="<?php echo JText::_('Edit Gallery')." &quot;{$item->title}&quot;"; ?>"><?php echo $item->title; ?></a></strong></td>
 			<td><?php echo $item->description; ?></td>
 			<td align="center"><?php echo $published; ?></td>
-			<td><?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC4')); ?></td>
-			<td><?php echo JHTML::_('date', $item->modified, JText::_('DATE_FORMAT_LC4')); ?></td>
+			<td style="white-space:nowrap;"><?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC4')); ?></td>
+			<td style="white-space:nowrap;"><?php echo JHTML::_('date', $item->modified, JText::_('DATE_FORMAT_LC4')); ?></td>
 		</tr>
 <?php
 		$k = 1 - $k;

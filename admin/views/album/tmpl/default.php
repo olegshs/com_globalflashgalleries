@@ -18,7 +18,7 @@ defined('_JEXEC') or die('Restricted access');
 			<td width="67%">
 				<table class="admintable" width="95%">
 					<tr>
-						<td class="key">
+						<td class="key" width="120">
 							<label for="album-title"><?php echo JText::_('Title'); ?>:</label>
 						</td>
 						<td>

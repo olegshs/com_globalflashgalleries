@@ -60,8 +60,8 @@ defined('_JEXEC') or die('Restricted access');
 			<td style="font-size:115%;"><strong><a href="<?php echo $link; ?>" title="<?php echo JText::_('Edit Album')." &quot;{$item->title}&quot;"; ?>"><?php echo $item->title; ?></a></strong> (<?php echo $count?>)</td>
 			<td><?php echo $item->description; ?></td>
 			<td align="right"><?php echo $size; ?></td>
-			<td><?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC4')); ?></td>
-			<td><?php echo JHTML::_('date', $item->modified, JText::_('DATE_FORMAT_LC4')); ?></td>
+			<td style="white-space:nowrap;"><?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC4')); ?></td>
+			<td style="white-space:nowrap;"><?php echo JHTML::_('date', $item->modified, JText::_('DATE_FORMAT_LC4')); ?></td>
 			<td>
 				<div style="margin:0.5em;">
 					<a class="<?php if (!$count) echo 'disabled '; ?>button" href="<?php echo $createGalleryLink; ?>" title="<?php echo JText::_('Create a Gallery from the Album')." &quot;{$item->title}&quot;"; ?>"<?php if (!$count) echo ' onclick="return false;"'; ?>><?php echo JText::_('Create Gallery'); ?></a>

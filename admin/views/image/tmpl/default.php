@@ -16,7 +16,7 @@ defined('_JEXEC') or die('Restricted access');
 
 		<table class="admintable">
 			<tr>
-				<td class="key">
+				<td class="key" width="120">
 					<label for="image-name"><?php echo JText::_('File Name'); ?>:</label>
 				</td>
 				<td>
