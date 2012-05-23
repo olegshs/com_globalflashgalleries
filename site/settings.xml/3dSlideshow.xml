@@ -174,7 +174,7 @@
 			</param>
 			<param name="albumID" default="">
 				<title>Album ID</title>
-				<description>Album ID</description>
+				<description></description>
 				<input type="text" />
 			</param>
 		</items>
@@ -185,17 +185,17 @@
 		<items>
 			<param name="userID" default="">
 				<title>User ID</title>
-				<description>User ID</description>
+				<description></description>
 				<input type="text" />
 			</param>
 			<param name="photosetID" default="">
 				<title>Photoset ID</title>
-				<description>Photoset ID</description>
+				<description></description>
 				<input type="text" />
 			</param>
 			<param name="tags" default="">
 				<title>Tags</title>
-				<description>Tags</description>
+				<description></description>
 				<input type="text" />
 			</param>
 		</items>
