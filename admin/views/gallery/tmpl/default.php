@@ -28,12 +28,12 @@ defined('_JEXEC') or die('Restricted access');
 								'3dSlideshow' =>'3D Slideshow',
 								'3dWall' =>		'3D Wall Gallery',
 								'Art' =>		'Art Gallery',
+								'Aura' =>		'Aura Gallery',
 								'Box' =>		'Box Gallery',
 								'Cubic' =>		'Cubic Gallery',
 								'Line' =>		'Line Gallery',
 								'PhotoFlow' =>	'PhotoFlow Gallery',
 								'Promo' =>		'Promo Gallery',
-								'Slide' =>		'Slide Gallery',
 								'StackPhoto' =>	'Stack Gallery',
 								'Zen' =>		'Zen Gallery'
 							),
