@@ -65,6 +65,7 @@
 		<filename>settings.xml/3dSlideshow.xml</filename>
 		<filename>settings.xml/3dWall.xml</filename>
 		<filename>settings.xml/Art.xml</filename>
+		<filename>settings.xml/Aura.xml</filename>
 		<filename>settings.xml/Box.xml</filename>
 		<filename>settings.xml/Cubic.xml</filename>
 		<filename>settings.xml/Line.xml</filename>
@@ -83,6 +84,7 @@
 		<filename>swf/3dSlideshow.swf</filename>
 		<filename>swf/3dWall.swf</filename>
 		<filename>swf/Art.swf</filename>
+		<filename>swf/Aura.swf</filename>
 		<filename>swf/Box.swf</filename>
 		<filename>swf/Cubic.swf</filename>
 		<filename>swf/Line.swf</filename>
@@ -96,6 +98,8 @@
 		<filename>tpl/xml/3dWall-item.xml</filename>
 		<filename>tpl/xml/Art.xml</filename>
 		<filename>tpl/xml/Art-item.xml</filename>
+		<filename>tpl/xml/Aura.xml</filename>
+		<filename>tpl/xml/Aura-item.xml</filename>
 		<filename>tpl/xml/Box.xml</filename>
 		<filename>tpl/xml/Box-item.xml</filename>
 		<filename>tpl/xml/Cubic.xml</filename>
@@ -279,6 +283,7 @@
 			<filename>tpl/settings/3dSlideshow.html</filename>
 			<filename>tpl/settings/3dWall.html</filename>
 			<filename>tpl/settings/Art.html</filename>
+			<filename>tpl/settings/Aura.html</filename>
 			<filename>tpl/settings/Box.html</filename>
 			<filename>tpl/settings/Cubic.html</filename>
 			<filename>tpl/settings/Line.html</filename>
