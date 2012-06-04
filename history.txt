@@ -1,3 +1,10 @@
+--- 0.8.0 ---
+4 Jun 2012
+
++ New Aura Gallery
++ Minor bug fixes
+
+
 --- 0.7.2 ---
 14 May 2012
 

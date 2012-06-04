@@ -6,7 +6,7 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
-define( 'globalflash_version',		'0.7.2' );
+define( 'globalflash_version',		'0.8.0' );
 define( 'globalflash_debug',		false );
 
 $jversion = new JVersion();
