@@ -14,6 +14,7 @@
 				slide: function(event, ui) {
 					$('#{id2}').css('left', Math.round( (ui.value - {min}) * {width} / ({max} - {min}) ) + 'px');
 					$('#{id2}').val(ui.value);
+					$('#slider-{id2} .ui-slider').css({ overflow: 'visible' }).parent().css({ position: 'static', overflow: 'visible' });
 				},
 				change: function(event, ui) {
 					applyChanges( document.getElementById('{id}') );
