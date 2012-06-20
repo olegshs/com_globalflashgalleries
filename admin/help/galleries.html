@@ -50,6 +50,53 @@
 		<li>Select a gallery from the drop-down list and click &ldquo;Save&rdquo;.</li>
 	</ol>
 
+	<h3>Inserting the Gallery into Article</h3>
+	<div>To embed a gallery in the article using <em>Gallery Embed Plugin</em>, insert the following code into article text:</div>
+	<div style="margin:0.5em 0;"><code>{globalflash.gallery 1}</code></div>
+	<div>where replace the number "1" with ID of the gallery you wish to insert.</div>
+	<div style="margin:1em 0 0.5em;"><strong>Advanced syntax:</strong></div>
+	<div style="margin:0.5em 0 0.7em 0.7em; text-indent:-0.7em;"><code style="white-space:normal;">{globalflash.gallery id=1 align=center width=550 height=400 bgcolor="#ffffff" <span style="white-space:nowrap;">bgimage="http://example.com/image.jpg"</span>}</code></div>
+	<table cellpadding="5" cellspacing="0" border="1">
+		<thead>
+			<tr>
+				<th>Parameter name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr valign="top">
+				<td><code>id</code></td>
+				<td>ID of the gallery to insert.</td>
+			</tr>
+			<tr valign="top">
+				<td><code>align</code></td>
+				<td>
+					Horizontal alignment on the page.<br/>
+					Possible values: <code>left</code>, <code>center</code>, <code>right</code>.
+				</td>
+			</tr>
+			<tr valign="top">
+				<td><code>width</code></td>
+				<td>Redefine the width of a gallery.</td>
+			</tr>
+			<tr valign="top">
+				<td><code>height</code></td>
+				<td>Redefine the height of a gallery.</td>
+			</tr>
+			<tr valign="top">
+				<td><code>bgcolor</code></td>
+				<td>Redefine the background color.</td>
+			</tr>
+			<tr valign="top">
+				<td><code>bgimage</code></td>
+				<td>Redefine the URL of background image.</td>
+			</tr>
+		</tbody>
+	</table>
+	<div style="margin:1em 0;">
+		Gallery Embed Plugin can be downloaded here:<br/>
+		<a href="http://flash-gallery.com/update/latest/plg_globalflashembed.zip">http://flash-gallery.com/update/latest/plg_globalflashembed.zip</a>
+	</div>
 </div>
 </body>
 </html>
