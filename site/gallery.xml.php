@@ -42,7 +42,7 @@ foreach ($settings as $name => $value)
 	$a[$name] = htmlspecialchars($value);
 
 $a['imagesFolder'] = globalflash_imagesURL.'/';
-$a['soundsFolder'] = globalflash_rootURL.'/media/sounds/';
+$a['soundsFolder'] = globalflash_frontendURL.'/media/sounds/';
 $a['loader'] = 'true';
 $a['items'] = '';
 
