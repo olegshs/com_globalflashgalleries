@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -19,6 +19,41 @@ class GlobalFlashGalleriesControllerGallery extends GlobalFlashGalleriesControll
 		$this->registerTask('unpublish', 'publish');
 		$this->registerTask('addImages', 'addImages');
 		$this->registerTask('arrange', 'arrange');
+
+		if (isset($_POST['importSettings']))
+			$this->importSettings();
+	}
+
+	function importSettings() {
+		if (is_uploaded_file($_FILES['importSettingsFile']['tmp_name'])) {
+			$tmpPath = globalflash_tmpDir.DS.rand().'.xml';
+			if (move_uploaded_file($_FILES['importSettingsFile']['tmp_name'], $tmpPath)) {
+				$data = simplexml_load_file($tmpPath);
+				if ($data->settings) {
+					$settings = array();
+					foreach ($data->settings as $object) {
+						foreach ($object as $element) {
+							$name = $element->getName();
+							foreach ($element as $option => $value) {
+								$settings["{$name}.{$option}"] = (string)$value;
+							}
+							$attributes = $element->attributes();
+							foreach ($attributes as $option => $value) {
+								$settings["{$name}.{$option}"] = (string)$value;
+							}
+							if (trim((string)$element))
+								$settings[$name] = (string)$element;
+						}
+					}
+					if (!empty($settings)) {
+						$model = $this->getModel('gallery');
+						$model->getData();
+						$model->saveSettings($settings);
+					}
+				}
+			}
+		}
+		$this->setRedirect('index.php?option=com_globalflashgalleries&controller=gallery&task=edit&cid[]='.JRequest::getInt('id'));
 	}
 
 	function edit()
