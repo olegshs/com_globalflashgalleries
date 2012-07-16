@@ -59,12 +59,12 @@ if (!$transparent) {
 	swfobject.registerObject('<?php echo $flashID; ?>', '9.0.45.0', '<?php echo globalflash_adminURL; ?>/js/swfobject/expressInstall.swf');
 	swf = swfobject.getObjectById('<?php echo $flashID; ?>');
 
-	jQuery('#<?php echo $flashID; ?> .globalflash-altcontent').altgallery({
+	altgallery({
 		width: '<?php echo $width; ?>',
 		height: '<?php echo $height; ?>',
 		images: { folder:'<?php echo globalflash_frontendURL.'/images' ?>' },
 		config: '<?php echo $xmlURL; ?>',
 		configType: 'xml'
-	});
+	}, '#<?php echo $flashID; ?> .globalflash-altcontent');
 //]]></script>
 <!-- /com_globalflashgalleries -->
