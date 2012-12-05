@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -20,7 +20,7 @@ function file_put_contents($filename, $data)
 }
 endif;
 
-class GlobalFlashGalleriesViewXML extends JView
+class GlobalFlashGalleriesViewXML extends JViewLegacy
 {
 	var
 		$tpl,

@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -10,7 +10,7 @@ jimport('joomla.application.component.controller');
 jimport('joomla.installer.installer');
 jimport('joomla.installer.helper');
 
-class GlobalFlashGalleriesControllerComponent extends JController
+class GlobalFlashGalleriesControllerComponent extends JControllerLegacy
 {
 	function __construct()
 	{

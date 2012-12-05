@@ -1,5 +1,5 @@
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -17,7 +17,7 @@ body.wait * {
 	margin-left: 0;
 }
 
-.com_globalflashgalleries {
+div.com_globalflashgalleries {
 	min-height: 20em;
 	padding: 1px;
 }

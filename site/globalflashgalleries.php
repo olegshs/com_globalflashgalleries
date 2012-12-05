@@ -6,6 +6,9 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
+if (!defined('DS'))
+	define('DS', DIRECTORY_SEPARATOR);
+
 require_once dirname(__FILE__).DS.'defines.php';
 
 // Require the base controller

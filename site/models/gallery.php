@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -8,7 +8,7 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 
 jimport('joomla.application.component.model');
 
-class GlobalFlashGalleriesModelGallery extends JModel
+class GlobalFlashGalleriesModelGallery extends JModelLegacy
 {
 	/**
 	 * Constructor that retrieves the ID from the request

@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 jimport('joomla.application.component.view');
 jimport('joomla.utilities.date');
 
-class GlobalFlashGalleriesViewAlbums extends JView
+class GlobalFlashGalleriesViewAlbums extends JViewLegacy
 {
 	function display( $tpl = null )
 	{
@@ -23,7 +23,10 @@ class GlobalFlashGalleriesViewAlbums extends JView
 			JToolBarHelper::deleteList();
 			JToolBarHelper::editListX();
 		}
-		JToolBarHelper::addNewX();
+		if (method_exists('JToolBarHelper', 'addNewX'))
+			JToolBarHelper::addNewX();
+		else
+			JToolBarHelper::addNew();
 
 		JToolBarHelper::help('../albums.html', true);
 

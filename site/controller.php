@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -8,7 +8,7 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 
 jimport('joomla.application.component.controller');
 
-class GlobalFlashGalleriesController extends JController
+class GlobalFlashGalleriesController extends JControllerLegacy
 {
 	/**
 	 * Method to display the view

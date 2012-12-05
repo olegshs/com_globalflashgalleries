@@ -8,7 +8,7 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 
 jimport('joomla.application.component.view');
 
-class GlobalFlashGalleriesViewCheckUpdates extends JView
+class GlobalFlashGalleriesViewCheckUpdates extends JViewLegacy
 {
 	function display( $tpl = null )
 	{

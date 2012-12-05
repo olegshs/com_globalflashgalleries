@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -29,4 +29,14 @@ else
 	$config =& JFactory::getConfig();
 	define( 'globalflash_tmpDir',		$config->getValue('config.tmp_path').DS.'globalflashgalleries' );
 	define( 'globalflash_tmpURL',		str_replace(DS, '/', preg_replace('/^'.preg_quote(JPATH_ROOT.DS, '/').'(.*)/', JURI::root(true).'/$1', globalflash_tmpDir)) );
+}
+
+if (!class_exists('JControllerLegacy')) {
+	class JControllerLegacy extends JController {}
+}
+if (!class_exists('JModelLegacy')) {
+	class JModelLegacy extends JModel {}
+}
+if (!class_exists('JViewLegacy')) {
+	class JViewLegacy extends JView {}
 }

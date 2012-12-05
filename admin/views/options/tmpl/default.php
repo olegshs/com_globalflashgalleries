@@ -1,10 +1,15 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2011 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
 defined('_JEXEC') or die('Restricted access');
+
+if (method_exists('JUtility', 'getToken'))
+	$token = JUtility::getToken();
+else
+	$token = JSession::getFormToken();
 
 ?>
 <div class="component-options com_globalflashgalleries">
@@ -51,7 +56,7 @@ defined('_JEXEC') or die('Restricted access');
 	<div class="option">
 		<input type="hidden" name="options[galleries.enable_cache]" value="0" />
 		<label><input type="checkbox" class="checkbox" name="options[galleries.enable_cache]" value="1"<?php if ($this->options['galleries.enable_cache']) echo ' checked="checked"'; ?> /> <span class="title"><?php echo JText::_('Enable XML caching'); ?></span></label>
-		<div class="description"><?php echo JText::_('XML cache reduces server load.'); ?> <a id="clearXmlCache" href="index.php?option=com_globalflashgalleries&amp;controller=component&amp;task=clearXmlCache&amp;<?php echo JUtility::getToken(); ?>=1"><?php echo JText::_('Clear cache'); ?></a></div>
+		<div class="description"><?php echo JText::_('XML cache reduces server load.'); ?> <a id="clearXmlCache" href="index.php?option=com_globalflashgalleries&amp;controller=component&amp;task=clearXmlCache&amp;<?php echo $token; ?>=1"><?php echo JText::_('Clear cache'); ?></a></div>
 	</div>
 
 	<div class="submit">
