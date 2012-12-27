@@ -84,9 +84,11 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 		JPluginHelper::importPlugin('globalflashgalleries');
 		$dispatcher =& JDispatcher::getInstance();
 
-		$legacy = $dispatcher->trigger( 'onGenerateXMLfor'.$gallery->type, array('1') );
-		$settingsPath = empty($legacy[0]) ? 'settings/' : 'settings.legacy/';
-		$this->assignRef('settingsPath', $settingsPath);
+		if (!$isNew) {
+			$legacy = $dispatcher->trigger( 'onGenerateXMLfor'.$gallery->type, array('1') );
+			$settingsPath = empty($legacy[0]) ? 'settings/' : 'settings.legacy/';
+			$this->assignRef('settingsPath', $settingsPath);
+		}
 
 		$altgallery = $dispatcher->trigger('getJS');
 		if (!empty($altgallery[0])) {

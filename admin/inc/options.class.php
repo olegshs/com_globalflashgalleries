@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2011 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -42,7 +42,12 @@ class GlobalFlashGalleries_Options
 			if ( !isset($_globalflashgalleries_options[$name]) )
 			{
 				$db =& JFactory::getDBO();
-				$e_name = $db->getEscaped($name);
+				
+				if (globalflash_joomla15)
+					$e_name = $db->getEscaped($name);
+				else
+					$e_name = $db->escape($name);
+				
 				$db->setQuery("SELECT `value` FROM `#__globalflash_options` WHERE `name` = '{$e_name}'");
 				$value = $db->loadResult();
 				if ($value === null && $default === null)
@@ -73,8 +78,14 @@ class GlobalFlashGalleries_Options
 			global $_globalflashgalleries_options;
 
 			$db =& JFactory::getDBO();
-			$e_name = $db->getEscaped($name);
-			$e_value = $db->getEscaped($value);
+			if (globalflash_joomla15) {
+				$e_name = $db->getEscaped($name);
+				$e_value = $db->getEscaped($value);
+			}
+			else {
+				$e_name = $db->escape($name);
+				$e_value = $db->escape($value);
+			}
 
 			$db->setQuery("SELECT `id` FROM `#__globalflash_options` WHERE `name` = '{$e_name}'");
 			$id = (int)$db->loadResult();

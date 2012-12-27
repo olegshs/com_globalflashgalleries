@@ -16,6 +16,8 @@
 	<installfile>install.php</installfile>
 	<uninstallfile>uninstall.php</uninstallfile>
 
+	<scriptfile>installer.php</scriptfile>
+
 	<install>
 		<sql>
 			<file driver="mysql" charset="utf8">install.mysql.sql</file>

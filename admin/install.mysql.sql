@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS `#__globalflash_galleries` (
 	`height`		int unsigned NOT NULL DEFAULT '0',
 	`wmode`			varchar(20) NOT NULL,
 	`bgcolor`		varchar(10) NOT NULL,
+	`bgimage`		varchar(255) NOT NULL DEFAULT '',
 	`created`		datetime NOT NULL DEFAULT '2010-01-01 00:00:00',
 	`created_by`	int unsigned NOT NULL DEFAULT '0',
 	`modified`		datetime NOT NULL DEFAULT '2010-01-01 00:00:00',

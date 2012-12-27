@@ -63,8 +63,24 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 
 		if ( !$this->_data )
 		{
-			$this->_data = new stdClass();
-			$this->_data->id = 0;
+			$this->_data = (object)array(
+				'id' => 0,
+				'name' => null,
+				'title' => null,
+				'description' => null,
+				'type' => null,
+				'width' => null,
+				'height' => null,
+				'wmode' => null,
+				'bgcolor' => null,
+				'bgimage' => null,
+				'created' => null,
+				'created_by' => null,
+				'modified' => null,
+				'modified_by' => null,
+				'published' => null,
+				'order' => null
+			);
 		}
 
 		return $this->_data;
@@ -446,8 +462,10 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 		$items =& $this->getItems();
 
 		$altContent = '';
-		foreach ($items as $item)
-			$altContent .= "\n\t\t<li><a href='{$item->source}'><img src='{$item->thumbnail}' alt='{$item->description}' /></a></li>";
+		if (!empty($items)) {
+			foreach ($items as $item)
+				$altContent .= "\n\t\t<li><a href='{$item->source}'><img src='{$item->thumbnail}' alt='{$item->description}' /></a></li>";
+		}
 
 		return "<div class='globalflash-altcontent'><ul>{$altContent}\n\t</ul></div>";
 	}

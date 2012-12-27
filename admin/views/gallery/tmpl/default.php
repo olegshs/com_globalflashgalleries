@@ -161,13 +161,22 @@ defined('_JEXEC') or die('Restricted access');
 
 	<div style="margin:2em 1em;">
 <?php
-jimport('joomla.html.pane');
-$pane =& JPane::getInstance('sliders');
-echo $pane->startPane('pane');
+	if (globalflash_joomla15) {
+		jimport('joomla.html.pane');
+		$pane =& JPane::getInstance('sliders');
+		echo $pane->startPane('pane');
+	}
+	else
+		echo JHtml::_('tabs.start');
 ?>
 
 <?php if (!$this->gallery->isNew) : ?>
-<?php echo $pane->startPanel(JText::_('Images'), 'images-pane'); ?>
+<?php 
+	if (globalflash_joomla15)
+		echo $pane->startPanel(JText::_('Images'), 'images-panel');
+	else
+		echo JHtml::_('tabs.panel', JText::_('Images'), 'images-panel');
+?>
 		<div class="images" style="padding:1em; background:#fff;">
 			<?php /* ?><div class="arrange" style="float:right; margin:5px 30px 0 0;">
 				<label for="arrangeOrder"><?php echo JText::_('Arrange by Title'); ?></label>
@@ -239,19 +248,33 @@ echo $pane->startPane('pane');
 			//]]></script>
 		</div>
 
-<?php echo $pane->endPanel(); ?>
+<?php
+	if (globalflash_joomla15)
+		echo $pane->endPanel();
+?>
 <?php endif; ?>
 
 <?php if (!$this->gallery->isNew) : ?>
-<?php echo $pane->startPanel(JText::_('Settings'), 'settings-pane'); ?>
+<?php
+	if (globalflash_joomla15)
+		echo $pane->startPanel(JText::_('Settings'), 'settings-pane');
+	else
+		echo JHtml::_('tabs.panel', JText::_('Settings'), 'settings-panel');
+?>
 		<div class="settings" style="padding:1em; background:#fff;">
 <?php include 'settings.php'; ?>
 		</div>
-<?php echo $pane->endPanel(); ?>
+<?php
+	if (globalflash_joomla15)
+		echo $pane->endPanel();
+?>
 <?php endif; ?>
 
 <?php
-echo $pane->endPane();
+	if (globalflash_joomla15)
+		echo $pane->endPane();
+	else
+		echo JHTml::_('tabs.end');
 ?>
 	</div>
 

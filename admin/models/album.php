@@ -60,6 +60,16 @@ class GlobalFlashGalleriesModelAlbum extends JModelLegacy
 		{
 			$this->_data = new stdClass();
 			$this->_data->id = 0;
+			$this->_data = (object)array(
+				'id' => 0,
+				'title' => null,
+				'description' => null,
+				'created' => null,
+				'created_by' => null,
+				'modified' => null,
+				'modified_by' => null,
+				'order' => null
+			);
 		}
 
 		return $this->_data;

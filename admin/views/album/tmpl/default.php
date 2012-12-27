@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="album-edit com_globalflashgalleries">
 
-<form action="index.php" method="post" name="adminForm" id="adminForm" enctype="multipart/form-data">
+<form id="adminForm" name="adminForm" action="index.php" method="post" enctype="multipart/form-data">
 <div class="col100">
 	<fieldset class="adminform">
 		<legend><?php echo JText::_('Details'); ?></legend>
