@@ -12,6 +12,8 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 {
 	function display( $tpl = null )
 	{
+		JHtml::_('bootstrap.framework');
+		
 		$document =& JFactory::getDocument();
 		$document->addStyleSheet( globalflash_adminURL.'/css/jquery/jquery-ui.css', 'text/css', null, array() );
 		$document->addStyleSheet( globalflash_adminURL.'/css/farbtastic/farbtastic.css', 'text/css', null, array() );

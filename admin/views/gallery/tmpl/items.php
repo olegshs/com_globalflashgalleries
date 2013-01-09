@@ -8,6 +8,12 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 
 require_once globalflash_adminDir.DS.'inc'.DS.'image.class.php';
 
+if (method_exists('JUtility', 'getToken'))
+	$token = JUtility::getToken();
+else
+	$token = JSession::getFormToken();
+
+
 foreach ($this->items as $item)
 {
 	$editURL = 'index.php?option=com_globalflashgalleries&controller=image&amp;task=edit&amp;cid[]='.$item->id;
@@ -46,7 +52,7 @@ jQuery(document).ready(function($) {
 				type: 'post',
 				url: this.href + '&format=raw',
 				data: {
-					'<?php echo JUtility::getToken(); ?>': '1'
+					'<?php echo $token; ?>': '1'
 				}
 			});
 			$(this).parents('.item').fadeOut(500, function() {
@@ -66,7 +72,7 @@ jQuery(document).ready(function($) {
 				url: 'index.php?option=com_globalflashgalleries&controller=gallery&task=arrange&format=raw&cid[]=<?php echo (int)$this->gallery->id; ?>',
 				data: {
 					order: ids,
-					'<?php echo JUtility::getToken(); ?>': '1'
+					'<?php echo $token; ?>': '1'
 				}
 			});
 		},

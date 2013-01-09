@@ -25,7 +25,10 @@ class GlobalFlashGalleriesViewGalleries extends JViewLegacy
 			JToolBarHelper::publishList();
 			JToolBarHelper::unpublishList();
 			JToolBarHelper::deleteList();
-			JToolBarHelper::editListX();
+			if (method_exists('JToolBarHelper', 'editListX'))
+				JToolBarHelper::editListX();
+			else
+				JToolBarHelper::editList();
 		}
 		if (method_exists('JToolBarHelper', 'addNewX'))
 			JToolBarHelper::addNewX();
