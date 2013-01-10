@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -9,6 +9,11 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 if ( count($this->items) ) :
 
 require_once globalflash_adminDir.DS.'inc'.DS.'image.class.php';
+
+if (method_exists('JUtility', 'getToken'))
+	$token = JUtility::getToken();
+else
+	$token = JSession::getFormToken();
 
 ?>
 <script type="text/javascript">//<![CDATA[
@@ -119,7 +124,7 @@ require_once globalflash_adminDir.DS.'inc'.DS.'image.class.php';
 				url: 'index.php?option=com_globalflashgalleries&controller=album&task=arrange&format=raw&cid[]=<?php echo $this->album->id; ?>',
 				data: {
 					order: ids,
-					'<?php echo JUtility::getToken(); ?>': '1'
+					'<?php echo $token; ?>': '1'
 				}
 			});
 		},
@@ -149,7 +154,7 @@ require_once globalflash_adminDir.DS.'inc'.DS.'image.class.php';
 				type: 'post',
 				url: this.href + '&format=raw',
 				data: {
-					'<?php echo JUtility::getToken(); ?>': '1'
+					'<?php echo $token; ?>': '1'
 				}
 			});
 			$(this).parents('tr').fadeOut(500, function() {

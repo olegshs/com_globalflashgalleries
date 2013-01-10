@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -70,6 +70,9 @@ class GlobalFlashGalleriesController extends JControllerLegacy
 		$document =& JFactory::getDocument();
 		$document->addStyleSheet( JURI::base(true).'/components/com_globalflashgalleries/css/all.css', 'text/css', null, array() );
 		$document->addStyleSheet( JURI::base(true).'/components/com_globalflashgalleries/css/icons.css', 'text/css', null, array() );
+		
+		if (globalflash_joomla3)
+			$document->addStyleSheet( JURI::base(true).'/components/com_globalflashgalleries/css/joomla3.css', 'text/css', null, array() );
 	}
 
 	function addSubmenu()

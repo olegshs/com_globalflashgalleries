@@ -1,0 +1,38 @@
+/**
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
+ * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
+ */
+
+.com_globalflashgalleries .tabs-panel {
+	padding: 7px;
+	border-radius: 5px;
+	background: #ddd;
+	background-image: -moz-linear-gradient(top, #fcfcfc 1px, #eee 30px);
+	border: 1px solid #ccc;
+}
+.com_globalflashgalleries .tabs-panel dl.tabs {
+	margin: 0;
+}
+.com_globalflashgalleries .tabs-panel dl.tabs dt {
+	float: left;
+	margin: 0;
+}
+.com_globalflashgalleries .tabs-panel dl.tabs dt h3 {
+	margin: 0;
+}
+.com_globalflashgalleries .tabs-panel dl.tabs dt a {
+	display: block;
+	padding: 5px 10px;
+	outline: none;
+	border-radius: 3px 3px 0 0;
+}
+.com_globalflashgalleries .tabs-panel dl.tabs dt.open a {
+	background: #fff;
+	box-shadow: 0 -1px 1px rgba(0,0,0,0.3);
+}
+.com_globalflashgalleries .tabs-panel .current {
+	clear: left;
+	background: #fff;
+	border-radius: 0 0 3px 3px;
+	box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}

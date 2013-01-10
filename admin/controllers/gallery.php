@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -59,7 +59,7 @@ class GlobalFlashGalleriesControllerGallery extends GlobalFlashGalleriesControll
 	function edit()
 	{
 		JRequest::setVar('view', 'gallery');
-		JRequest::setVar('hidemainmenu', 1);
+		//JRequest::setVar('hidemainmenu', 1);
 
 		parent::display();
 	}

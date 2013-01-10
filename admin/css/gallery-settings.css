@@ -29,7 +29,13 @@
 #flashSettings input,
 #flashSettings select,
 #flashSettings button {
+	margin: 0;
+	min-width: 0;
 	vertical-align: middle;
+}
+
+#flashSettings input.checkbox {
+	margin-right: 0.5em;
 }
 
 #flashSettings table.options {
@@ -55,6 +61,9 @@
 #flashSettings input.sound,
 #flashSettings select,
 #flashSettings textarea {
+	width: auto;
+	height: auto;
+	padding: 2px;
 	color: #000;
 	border: 1px solid #ccc;
 }
@@ -64,6 +73,7 @@
 #flashSettings input.color {
 	font-family: "Lucida Console", Monaco, monospace;
 	width: 5em;
+	padding: 4px 0 3px;
 	text-align: center;
 }
 #flashSettings input.image,

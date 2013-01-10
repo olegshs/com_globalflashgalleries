@@ -1,5 +1,5 @@
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -30,6 +30,10 @@ div.com_globalflashgalleries {
 	margin: 0.67em 0;
 }
 
+.com_globalflashgalleries .clr {
+	clear: both;
+}
+
 .com_globalflashgalleries label,
 .com_globalflashgalleries input,
 .com_globalflashgalleries textarea,
@@ -44,6 +48,10 @@ div.com_globalflashgalleries {
 .com_globalflashgalleries input.checkbox,
 .com_globalflashgalleries input[type=checkbox] {
 	border: none;
+}
+
+.com_globalflashgalleries input[type=file] {
+	height: auto;
 }
 
 .com_globalflashgalleries label * {
@@ -289,6 +297,7 @@ div.com_globalflashgalleries {
 	font-weight: normal;
 	width: 25%;
 	white-space: nowrap;
+	text-align: left;
 }
 .com_globalflashgalleries.album-edit #add_items-upload .item input.file {
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -8,6 +8,10 @@ defined('_JEXEC') or die('Restricted access');
 
 ?>
 <div class="gallery-edit com_globalflashgalleries">
+
+<script type="text/javascript">
+	jQuery.fn.tooltip = function() {};
+</script>
 
 <form id="adminForm" name="adminForm" action="index.php" method="post" enctype="multipart/form-data">
 <div class="col100">
@@ -159,7 +163,7 @@ defined('_JEXEC') or die('Restricted access');
 		</tr></table>
 	</fieldset>
 
-	<div style="margin:2em 1em;">
+	<div class="tabs-panel" style="margin:2em 1em;">
 <?php
 	if (globalflash_joomla15) {
 		jimport('joomla.html.pane');
@@ -177,7 +181,7 @@ defined('_JEXEC') or die('Restricted access');
 	else
 		echo JHtml::_('tabs.panel', JText::_('Images'), 'images-panel');
 ?>
-		<div class="images" style="padding:1em; background:#fff;">
+		<div class="images" style="padding:1em;">
 			<?php /* ?><div class="arrange" style="float:right; margin:5px 30px 0 0;">
 				<label for="arrangeOrder"><?php echo JText::_('Arrange by Title'); ?></label>
 				<select id="arrangeOrder" name="order">
@@ -193,13 +197,15 @@ defined('_JEXEC') or die('Restricted access');
 			</div>
 			<?php endif; ?>
 
-			<div class="items" id="gallery-items-<?php echo $this->gallery->id; ?>" style="margin:0 0 0 -7px;"><?php include 'items.php'; ?></div>
+			<div class="items" id="gallery-items-<?php echo $this->gallery->id; ?>" style="clear:both; margin:0 0 0 -7px;"><?php
+				include 'items.php';
+			?></div>
 
 			<div class="add after" style="margin:0 0 0 10px;">
 				<input type="button" class="button" id="addImages-after-<?php echo $this->gallery->id; ?>" value="<?php echo JText::_('Add Images'); ?>" />
 			</div>
 
-			<div>&nbsp;</div>
+			<div style="clear:both;">&nbsp;</div>
 
 			<div class="selectImages" id="selectImages" style="display:none;"></div>
 
@@ -207,7 +213,6 @@ defined('_JEXEC') or die('Restricted access');
 				var selectedImagesCount = 0;
 
 				jQuery(document).ready(function($) {
-
 					$('#selectImages').dialog({
 						title: '<?php echo JText::_('Select Images'); ?>',
 						autoOpen: false,
@@ -225,25 +230,23 @@ defined('_JEXEC') or die('Restricted access');
 						}
 					});
 
-					$('.com_globalflashgalleries .images .add input')
-						.click(function() {
-							$('#selectImages')
-								.empty()
-								.dialog('open')
-								.css({ background:'url(components/com_globalflashgalleries/images/loader.gif) no-repeat center' })
-								.load(
-									'index.php?option=com_globalflashgalleries&view=albums&layout=select&format=raw',
-									{
-										gallery_id: this.id.match(/(\d+)/)[1],
-										order: $(this.parentNode).hasClass('before') ? 'before' : 'after'
-									},
-									function() {
-										$(this).css({ background:'none' });
-									}
-								);
-							return false;
-						});
-
+					$('.com_globalflashgalleries .images .add input').click(function() {
+						$('#selectImages')
+							.empty()
+							.dialog('open')
+							.css({ background:'url(components/com_globalflashgalleries/images/loader.gif) no-repeat center' })
+							.load(
+								'index.php?option=com_globalflashgalleries&view=albums&layout=select&format=raw',
+								{
+									gallery_id: this.id.match(/(\d+)/)[1],
+									order: $(this.parentNode).hasClass('before') ? 'before' : 'after'
+								},
+								function() {
+									$(this).css({ background:'none' });
+								}
+							);
+						return false;
+					});
 				});
 			//]]></script>
 		</div>
@@ -261,7 +264,7 @@ defined('_JEXEC') or die('Restricted access');
 	else
 		echo JHtml::_('tabs.panel', JText::_('Settings'), 'settings-panel');
 ?>
-		<div class="settings" style="padding:1em; background:#fff;">
+		<div class="settings" style="padding:1em;">
 <?php include 'settings.php'; ?>
 		</div>
 <?php

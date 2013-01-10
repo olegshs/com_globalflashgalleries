@@ -20,7 +20,7 @@ class GlobalFlashGalleriesControllerImage extends GlobalFlashGalleriesController
 	function edit()
 	{
 		JRequest::setVar('view', 'image');
-		JRequest::setVar('hidemainmenu', 1);
+		//JRequest::setVar('hidemainmenu', 1);
 
 		parent::display();
 	}

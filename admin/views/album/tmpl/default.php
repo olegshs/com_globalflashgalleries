@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -8,6 +8,10 @@ defined('_JEXEC') or die('Restricted access');
 
 ?>
 <div class="album-edit com_globalflashgalleries">
+
+<script type="text/javascript">
+	jQuery.fn.tooltip = function() {};
+</script>
 
 <form id="adminForm" name="adminForm" action="index.php" method="post" enctype="multipart/form-data">
 <div class="col100">
@@ -80,16 +84,14 @@ defined('_JEXEC') or die('Restricted access');
 				?></div> -->
 			</div>
 			<script type="text/javascript">//<![CDATA[
-				(function($) {
+				jQuery(document).ready(function($) {
 					$('#album-add_items').tabs({
 						fx: { opacity: 'toggle', duration: 'fast' },
 						show: function(event, ui) {
-							$(document).ready(function() {
-								$('#album-add_items').show();
-							});
+							$('#album-add_items').show();
 						}
 					});
-				})(jQuery);
+				});
 			//]]></script>
 		</div>
 	</fieldset>

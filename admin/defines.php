@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -12,6 +12,7 @@ define( 'globalflash_debug',		false );
 $jversion = new JVersion();
 $ver = $jversion->getShortVersion();
 define( 'globalflash_joomla15',		version_compare($ver, '1.6', '<') ? $ver : false );
+define( 'globalflash_joomla3',		version_compare($ver, '3.0', '>=') ? $ver : false );
 
 define( 'globalflash_adminDir',		JPATH_BASE.DS.'components'.DS.'com_globalflashgalleries' );
 define( 'globalflash_adminURL',		JURI::base(true).'/components/com_globalflashgalleries' );

@@ -1,10 +1,15 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
 defined('_JEXEC') or die('Restricted access');
+
+if (method_exists('JUtility', 'getToken'))
+	$token = JUtility::getToken();
+else
+	$token = JSession::getFormToken();
 
 ?>
 <div class="com_globalflashgalleries">
@@ -32,7 +37,7 @@ jQuery(document).ready(function($) {
 			controller: 'component',
 			task: 'download',
 			url: '<?php echo addslashes($this->update->url); ?>',
-			'<?php echo JUtility::getToken(); ?>': '1'
+			'<?php echo $token; ?>': '1'
 		},
 		success: function(data) {
 			if (data.status == 'ok' && data.packagefile && data.extractdir) {
@@ -50,7 +55,7 @@ jQuery(document).ready(function($) {
 						option: 'com_globalflashgalleries',
 						controller: 'component',
 						task: 'remove',
-						'<?php echo JUtility::getToken(); ?>': '1'
+						'<?php echo $token; ?>': '1'
 					},
 					success: function(data) {
 						if (data.status == 'ok') {
@@ -64,7 +69,7 @@ jQuery(document).ready(function($) {
 									task: '<?php echo globalflash_joomla15 ? 'doInstall' : 'install.install'; ?>',
 									installtype: 'folder',
 									install_directory: extractdir,
-									'<?php echo JUtility::getToken(); ?>': '1'
+									'<?php echo $token; ?>': '1'
 								},
 								success: function(data) {
 									if ( !data.match(/<dt class="error">/) ) {
@@ -77,7 +82,7 @@ jQuery(document).ready(function($) {
 												task: 'cleanupInstall',
 												packagefile: packagefile,
 												extractdir: extractdir,
-												'<?php echo JUtility::getToken(); ?>': '1'
+												'<?php echo $token; ?>': '1'
 											},
 											success: function() {
 												$('#upgrade-status').append('<p><big><?php echo JText::_("Done."); ?></big></p>');

@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -12,7 +12,8 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 {
 	function display( $tpl = null )
 	{
-		JHtml::_('bootstrap.framework');
+		if (globalflash_joomla3)
+			JHtml::_('bootstrap.framework');
 		
 		$document =& JFactory::getDocument();
 		$document->addStyleSheet( globalflash_adminURL.'/css/jquery/jquery-ui.css', 'text/css', null, array() );
