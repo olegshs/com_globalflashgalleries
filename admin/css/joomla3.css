@@ -65,7 +65,13 @@
 .com_globalflashgalleries table.adminlist tbody td {
 	border-top: 1px solid #ddd;
 }
-#flashSettings .slider .value input {
+.com_globalflashgalleries .items-bulk select {
+	width: auto;
+	height: auto;
+	padding: 3px;
+	line-height: 1.25;
+}
+.com_globalflashgalleries .slider .value input {
 	box-shadow: none;
 	top: -4px !important;
 }
