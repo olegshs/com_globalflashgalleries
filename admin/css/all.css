@@ -422,15 +422,16 @@ div.com_globalflashgalleries {
 	right: 0;
 	top: 12px;
 	margin: 0;
-	padding: 0.2em 0;
+	padding: 1px 0;
 	font-family: Verdana, sans-serif;
 	font-size: 10px !important;
-	opacity: 0.9;
 	visibility: hidden;
 	text-align: left;
 	list-style-type: none;
 	background-position: bottom;
 	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
 .com_globalflashgalleries.gallery-edit .images .item .image .menu:hover ul {
 	visibility: visible;
@@ -440,7 +441,7 @@ div.com_globalflashgalleries {
 }
 .com_globalflashgalleries.gallery-edit .images .item .image .menu li a {
 	display: block;
-	padding: 0.25em 0.75em;
+	padding: 3px 7px;
 	border-bottom: 1px solid #ccc;
 	text-decoration: none;
 }
