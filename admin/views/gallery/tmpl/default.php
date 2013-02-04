@@ -163,7 +163,7 @@ defined('_JEXEC') or die('Restricted access');
 	</fieldset>
 
 <?php if (!$this->gallery->isNew): ?>
-	<div class="tabs-panel" style="margin:2em 1em;">
+	<div class="tabs-panel" style="margin:2em 1em; min-width:900px;">
 <?php
 	if (globalflash_joomla15) {
 		jimport('joomla.html.pane');
