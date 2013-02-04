@@ -6,7 +6,7 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
-//error_reporting(0);
+error_reporting(0);
 
 if (!defined('DS'))
 	define('DS', DIRECTORY_SEPARATOR);
