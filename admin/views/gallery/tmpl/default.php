@@ -44,8 +44,7 @@ defined('_JEXEC') or die('Restricted access');
 							$this->gallery->type,
 							array(
 								'id' =>		'gallery-type',
-								'name' =>	'type',
-								'style' =>	'font-size:125%;'
+								'name' =>	'type'
 							)
 						);
 ?>
@@ -57,7 +56,7 @@ defined('_JEXEC') or die('Restricted access');
 							<label for="gallery-title"><?php echo JText::_('Title'); ?>:</label>
 						</td>
 						<td>
-							<input type="text" class="text" id="gallery-title" name="title" value="<?php echo htmlspecialchars($this->gallery->title); ?>" size="40" maxlength="250" style="font-size:150%; width:95%;" />
+							<input type="text" class="text" id="gallery-title" name="title" value="<?php echo htmlspecialchars($this->gallery->title); ?>" size="40" maxlength="250" style="font-size:150%; width:95%; height:auto;" />
 						</td>
 					</tr>
 					<tr valign="top">
@@ -163,6 +162,7 @@ defined('_JEXEC') or die('Restricted access');
 		</tr></table>
 	</fieldset>
 
+<?php if (!$this->gallery->isNew): ?>
 	<div class="tabs-panel" style="margin:2em 1em;">
 <?php
 	if (globalflash_joomla15) {
@@ -173,9 +173,7 @@ defined('_JEXEC') or die('Restricted access');
 	else
 		echo JHtml::_('tabs.start');
 ?>
-
-<?php if (!$this->gallery->isNew) : ?>
-<?php 
+<?php
 	if (globalflash_joomla15)
 		echo $pane->startPanel(JText::_('Images'), 'images-panel');
 	else
@@ -255,9 +253,6 @@ defined('_JEXEC') or die('Restricted access');
 	if (globalflash_joomla15)
 		echo $pane->endPanel();
 ?>
-<?php endif; ?>
-
-<?php if (!$this->gallery->isNew) : ?>
 <?php
 	if (globalflash_joomla15)
 		echo $pane->startPanel(JText::_('Settings'), 'settings-pane');
@@ -271,8 +266,6 @@ defined('_JEXEC') or die('Restricted access');
 	if (globalflash_joomla15)
 		echo $pane->endPanel();
 ?>
-<?php endif; ?>
-
 <?php
 	if (globalflash_joomla15)
 		echo $pane->endPane();
@@ -280,6 +273,7 @@ defined('_JEXEC') or die('Restricted access');
 		echo JHTml::_('tabs.end');
 ?>
 	</div>
+<?php endif; ?>
 
 <?php if (globalflash_debug) : ?>
 	<div id="debug" style="margin:1em; padding:0.5em; background:#ffc; color:#333;">&nbsp;</div>

@@ -15,8 +15,8 @@ defined('_JEXEC') or die('Restricted access');
 	<table class="adminlist">
 	<thead>
 		<tr>
-			<th width="30"><?php echo JText::_('ID'); ?></th>
-			<th width="30"><input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($this->items); ?>);" /></th>
+			<th width="30" align="center"><?php echo JText::_('ID'); ?></th>
+			<th width="30" align="center"><input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($this->items); ?>);" /></th>
 			<th width="70"><?php echo JText::_('Type'); ?></th>
 			<th><?php echo JText::_('Title'); ?></th>
 			<th><?php echo JText::_('Description'); ?></th>

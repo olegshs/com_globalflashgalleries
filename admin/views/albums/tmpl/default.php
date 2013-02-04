@@ -15,8 +15,8 @@ defined('_JEXEC') or die('Restricted access');
 	<table class="adminlist">
 	<thead>
 		<tr>
-			<th width="30"><?php echo JText::_('ID'); ?></th>
-			<th width="30"><input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($this->items); ?>);" /></th>
+			<th width="30" align="center"><?php echo JText::_('ID'); ?></th>
+			<th width="30" align="center"><input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($this->items); ?>);" /></th>
 			<th><?php echo JText::_('Title'); ?></th>
 			<th><?php echo JText::_('Description'); ?></th>
 			<th width="60"><?php echo JText::_('Size'); ?></th>
@@ -62,7 +62,7 @@ defined('_JEXEC') or die('Restricted access');
 			<td align="right"><?php echo $size; ?></td>
 			<td style="white-space:nowrap;"><?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC4')); ?></td>
 			<td style="white-space:nowrap;"><?php echo JHTML::_('date', $item->modified, JText::_('DATE_FORMAT_LC4')); ?></td>
-			<td>
+			<td style="padding-top:0; padding-bottom:0;">
 				<div style="margin:0.5em;">
 					<a class="<?php if (!$count) echo 'disabled '; ?>button" href="<?php echo $createGalleryLink; ?>" title="<?php echo JText::_('Create a Gallery from the Album')." &quot;{$item->title}&quot;"; ?>"<?php if (!$count) echo ' onclick="return false;"'; ?>><?php echo JText::_('Create Gallery'); ?></a>
 				</div>

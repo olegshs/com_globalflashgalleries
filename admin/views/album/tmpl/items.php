@@ -35,9 +35,9 @@ else
 	<table class="images adminlist">
 		<thead>
 			<tr>
-				<th width="30"><?php echo JText::_('ID'); ?></th>
-				<th width="30"><input type="checkbox" name="toggle" value="" onclick="checkAll(this);" /></th>
-				<th><?php echo JText::_('Preview'); ?></th>
+				<th width="30" align="center"><?php echo JText::_('ID'); ?></th>
+				<th width="30" align="center"><input type="checkbox" name="toggle" value="" onclick="checkAll(this);" /></th>
+				<th align="center"><?php echo JText::_('Preview'); ?></th>
 				<th><?php echo JText::_('Title'); ?></th>
 				<th><?php echo JText::_('Description'); ?></th>
 				<th width="150">&nbsp;</th>
@@ -90,9 +90,9 @@ else
 		</tbody>
 		<tfoot>
 			<tr>
-				<th width="30"><?php echo JText::_('ID'); ?></th>
-				<th width="30"><input type="checkbox" name="toggle" value="" onclick="checkAll(this);" /></th>
-				<th><?php echo JText::_('Preview'); ?></th>
+				<th width="30" align="center"><?php echo JText::_('ID'); ?></th>
+				<th width="30" align="center"><input type="checkbox" name="toggle" value="" onclick="checkAll(this);" /></th>
+				<th align="center"><?php echo JText::_('Preview'); ?></th>
 				<th><?php echo JText::_('Title'); ?></th>
 				<th><?php echo JText::_('Description'); ?></th>
 				<th width="150">&nbsp;</th>

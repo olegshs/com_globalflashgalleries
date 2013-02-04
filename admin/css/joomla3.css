@@ -36,3 +36,36 @@
 	border-radius: 0 0 3px 3px;
 	box-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
+.com_globalflashgalleries .settings fieldset {
+	border-radius: 4px;
+}
+.com_globalflashgalleries .settings fieldset legend {
+	width: auto;
+	margin: 0 8px;
+	padding: 0;
+	border: none;
+}
+.com_globalflashgalleries table.adminlist {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+.com_globalflashgalleries table.adminlist td,
+.com_globalflashgalleries table.adminlist th {
+	padding: 8px;
+}
+.com_globalflashgalleries table.adminlist thead th,
+.com_globalflashgalleries table.adminlist tfoot th {
+	background: #eee;
+	background-image: -moz-linear-gradient(top, #fcfcfc 1px, #eee 30px);
+	border-right: 1px solid #ddd;
+}
+.com_globalflashgalleries table.adminlist tfoot th {
+	border-top: 1px solid #ddd;
+}
+.com_globalflashgalleries table.adminlist tbody td {
+	border-top: 1px solid #ddd;
+}
+#flashSettings .slider .value input {
+	box-shadow: none;
+	top: -4px !important;
+}

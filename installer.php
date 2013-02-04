@@ -72,7 +72,7 @@ class com_globalflashgalleriesInstallerScript
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
 	 */
 	function uninstall($adapter) {
-		include_once dirname(__FILE__).DS.'defines.php';
+		include_once dirname(__FILE__).'/defines.php';
 		
 		if ( is_dir(globalflash_imagesDir) )
 			JFolder::delete(globalflash_imagesDir);

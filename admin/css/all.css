@@ -102,10 +102,10 @@ div.com_globalflashgalleries {
 	border: 1px solid #999;
 	outline: none;
 	cursor: pointer;
-	-moz-border-radius: 1em;
-	-webkit-border-radius: 1em;
-	-khtml-border-radius: 1em;
-	border-radius: 1em;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
 	-moz-box-shadow: rgba(0,0,0,0.2) 1px 2px 4px;
 	-webkit-box-shadow: rgba(0,0,0,0.2) 1px 2px 4px;
 	-khtml-box-shadow: rgba(0,0,0,0.2) 1px 2px 4px;
@@ -125,10 +125,6 @@ div.com_globalflashgalleries {
 .com_globalflashgalleries .button.small {
 	padding: 0.05em 0.4em 0.15em;
 	//padding: 0 0.4em;
-	-moz-border-radius: 0.8em;
-	-webkit-border-radius: 0.8em;
-	-khtml-border-radius: 0.8em;
-	border-radius: 0.8em;
 }
 .com_globalflashgalleries .button:hover {
 	color: #000;
@@ -577,4 +573,14 @@ div.com_globalflashgalleries {
 .com_globalflashgalleries .whatsnew li {
 	margin: 0.2em 0;
 	padding: 0;
+}
+
+.com_globalflashgalleries table.adminlist td,
+.com_globalflashgalleries table.adminlist th {
+	padding: 8px;
+	text-align: left;
+}
+.com_globalflashgalleries table.adminlist td[align=center],
+.com_globalflashgalleries table.adminlist th[align=center] {
+	text-align: center;
 }

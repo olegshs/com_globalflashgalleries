@@ -26,7 +26,7 @@ defined('_JEXEC') or die('Restricted access');
 							<label for="album-title"><?php echo JText::_('Title'); ?>:</label>
 						</td>
 						<td>
-							<input type="text" class="text" id="album-title" name="title" value="<?php echo htmlspecialchars($this->album->title); ?>" size="75" maxlength="250" style="font-size:150%; width:95%;" />
+							<input type="text" class="text" id="album-title" name="title" value="<?php echo htmlspecialchars($this->album->title); ?>" size="75" maxlength="250" style="font-size:150%; width:95%; height:auto;" />
 						</td>
 					</tr>
 					<tr valign="top">
