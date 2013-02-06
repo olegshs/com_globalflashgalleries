@@ -16,7 +16,7 @@ class GlobalFlashGalleries_Options
 			'galleries.images.quality' => 2,
 			'galleries.generate_thumbnails' => 1,
 			'galleries.thumbnails.quality' => 2,
-			'galleries.enable_cache' => 0
+			'galleries.enable_cache' => 1
 		);
 	}
 
