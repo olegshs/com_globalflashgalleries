@@ -1,15 +1,12 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
-if (!defined('DS'))
-	define('DS', DIRECTORY_SEPARATOR);
-
-require_once dirname(__FILE__).DS.'defines.php';
+require_once dirname(__FILE__).'/defines.php';
 
 // Require the base controller
 require_once JPATH_COMPONENT.DS.'controller.php';

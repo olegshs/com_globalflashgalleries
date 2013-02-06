@@ -6,6 +6,9 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
+if (!defined('DS'))
+	define('DS', DIRECTORY_SEPARATOR);
+
 define( 'globalflash_version',		'0.8.2' );
 define( 'globalflash_debug',		false );
 
