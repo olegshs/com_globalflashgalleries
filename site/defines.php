@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 if (!defined('DS'))
 	define('DS', DIRECTORY_SEPARATOR);
 
-define( 'globalflash_version',		'0.8.2' );
+define( 'globalflash_version',		'0.9.0' );
 define( 'globalflash_debug',		false );
 
 $jversion = new JVersion();
