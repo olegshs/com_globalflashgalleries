@@ -29,8 +29,8 @@ if ( is_writable(JPATH_ROOT.DS.'tmp') )
 }
 else
 {
-	$config =& JFactory::getConfig();
-	define( 'globalflash_tmpDir',		$config->getValue('config.tmp_path').DS.'globalflashgalleries' );
+	$app =& JFactory::getApplication();
+	define( 'globalflash_tmpDir',		$app->getCfg('tmp_path').DS.'globalflashgalleries' );
 	define( 'globalflash_tmpURL',		str_replace(DS, '/', preg_replace('/^'.preg_quote(JPATH_ROOT.DS, '/').'(.*)/', JURI::root(true).'/$1', globalflash_tmpDir)) );
 }
 

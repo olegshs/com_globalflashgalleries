@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (c) 2010-2012 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
@@ -46,8 +46,8 @@ class GlobalFlashGalleriesControllerComponent extends JControllerLegacy
 			if (!$p_file)
 				jexit('{ "status": "error", "error": "Unable to download" }');
 
-			$config =& JFactory::getConfig();
-			$tmp_dest = $config->getValue('config.tmp_path');
+			$app =& JFactory::getApplication();
+			$tmp_dest = $app->getCfg('tmp_path');
 
 			// Unpack the downloaded package file
 			$package = JInstallerHelper::unpack($tmp_dest.DS.$p_file);
