@@ -224,7 +224,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 			if (isset($this->settings['lightbox.useLightbox']) && $this->settings['lightbox.useLightbox'] == 'true' && (empty($item->link) || $this->settings['lightbox.overrideLinks'] == 'true'))
 			{
 				$source = globalflash_imagesURL.'/'.$item->path;
-				$item->link = "javascript:jQuery.altbox('{$source}',{images:{folder:'".globalflash_frontendURL."/images/'}});";
+				$item->link = "javascript:altbox('{$source}',{images:{folder:'".globalflash_frontendURL."/images/'}});";
 				$item->target = "_self";
 			}
 			else
