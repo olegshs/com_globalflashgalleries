@@ -78,6 +78,7 @@
 					<option value="fade">fade</option>
 					<option value="zoom">zoom</option>
 					<option value="pixel">pixel</option>
+					<option value="slide">slide</option>
 					<option value="squares">squares</option>
 				</input>
 			</param>
