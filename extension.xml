@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="1.5.0" type="component" method="upgrade">
+<extension version="1.6.0" type="component" method="upgrade">
 	<name>Global Flash Galleries</name>
 	<creationDate>2010-06-01</creationDate>
 	<author>Mediaparts Interactive</author>
@@ -12,9 +12,6 @@
 	<releaseType>Major update</releaseType>
 	<downloadUrl>http://flash-gallery.com/update/get/com_globalflashgalleries-0.9.0.zip</downloadUrl>
 	<description>Global Flash Galleries Component for Joomla!</description>
-
-	<installfile>install.php</installfile>
-	<uninstallfile>uninstall.php</uninstallfile>
 
 	<scriptfile>installer.php</scriptfile>
 
