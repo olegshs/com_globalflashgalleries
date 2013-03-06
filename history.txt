@@ -1,3 +1,16 @@
+--- 0.9.1 ---
+6 Mar 2013
+
++ Bugs fixed
+
+
+--- 0.9.0 ---
+7 Feb 2013
+
++ Joomla 3.0 compatibility
++ Updated galleries
+
+
 --- 0.8.2 ---
 3 Oct 2012
 
