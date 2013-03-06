@@ -6,7 +6,6 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
-jimport('joomla.application.component.controller');
 jimport('joomla.installer.installer');
 jimport('joomla.installer.helper');
 

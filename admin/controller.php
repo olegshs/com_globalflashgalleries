@@ -6,8 +6,6 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
-jimport('joomla.application.component.controller');
-
 if (!function_exists('json_decode'))
 {
 	require_once globalflash_adminDir.DS.'inc'.DS.'services_json.class.php';

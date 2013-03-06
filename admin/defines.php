@@ -39,11 +39,14 @@ else
 }
 
 if (!class_exists('JControllerLegacy')) {
+	jimport('joomla.application.component.controller');
 	class JControllerLegacy extends JController {}
 }
 if (!class_exists('JModelLegacy')) {
+	jimport('joomla.application.component.model');
 	class JModelLegacy extends JModel {}
 }
 if (!class_exists('JViewLegacy')) {
+	jimport('joomla.application.component.view');
 	class JViewLegacy extends JView {}
 }

@@ -6,7 +6,6 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
-jimport('joomla.application.component.view');
 jimport('joomla.utilities.date');
 
 class GlobalFlashGalleriesViewAlbums extends JViewLegacy

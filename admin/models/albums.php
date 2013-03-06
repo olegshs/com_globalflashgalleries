@@ -6,8 +6,6 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
-jimport('joomla.application.component.model');
-
 class GlobalFlashGalleriesModelAlbums extends JModelLegacy
 {
 	/**
