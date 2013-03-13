@@ -72,13 +72,16 @@ class com_globalflashgalleriesInstallerScript
 	 * @param   JAdapterInstance  $adapter  The object responsible for running this script
 	 */
 	function uninstall($adapter) {
-		include_once dirname(__FILE__).'/defines.php';
+		$defines_php = dirname(__FILE__).'/defines.php';
+		if (is_file($defines_php)) {
+			include_once $defines_php;
 		
-		if ( is_dir(globalflash_imagesDir) )
-			JFolder::delete(globalflash_imagesDir);
+			if ( is_dir(globalflash_imagesDir) )
+				JFolder::delete(globalflash_imagesDir);
 		
-		if ( is_dir(globalflash_tmpDir) )
-			JFolder::delete(globalflash_tmpDir);
+			if ( is_dir(globalflash_tmpDir) )
+				JFolder::delete(globalflash_tmpDir);
+		}
 	}
 	
 	function findColumn($columns, $name)
