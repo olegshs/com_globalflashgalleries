@@ -75,6 +75,8 @@ class com_globalflashgalleriesInstallerScript
 		$defines_php = dirname(__FILE__).'/defines.php';
 		if (is_file($defines_php)) {
 			include_once $defines_php;
+
+			jimport('joomla.filesystem.folder');
 		
 			if ( is_dir(globalflash_imagesDir) )
 				JFolder::delete(globalflash_imagesDir);

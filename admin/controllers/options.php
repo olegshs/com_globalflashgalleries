@@ -39,6 +39,7 @@ class GlobalFlashGalleriesControllerOptions extends GlobalFlashGalleriesControll
 	{
 		$xmlCacheDir = globalflash_tmpDir.DS.'xml';
 		if (is_dir($xmlCacheDir)) {
+			jimport('joomla.filesystem.folder');
 			$files = JFolder::files($xmlCacheDir, '\d+\.xml$', false, true);
 			if (!empty($files)) {
 				foreach ($files as $file)

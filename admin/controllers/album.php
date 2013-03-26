@@ -196,12 +196,12 @@ class GlobalFlashGalleriesControllerAlbum extends GlobalFlashGalleriesController
 		$copyFunc = JRequest::getVar('import_delete', 0) ? 'rename' : 'copy';
 		$recurse = false;
 
+		jimport('joomla.filesystem.folder');
 		$files = JFolder::files($dir, '.*\.(gif|jpg|jpeg|png|GIF|JPG|JPEG|PNG)$', $recurse, true);
 		if ( is_array($files) && count($files) )
 		{
 			$destDir = globalflash_imagesDir;
 
-			jimport('joomla.filesystem.folder');
 			if ( !(JFolder::exists($destDir) || JFolder::create($destDir, 0777)) )
 				return false;
 

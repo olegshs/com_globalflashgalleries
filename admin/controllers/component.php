@@ -62,6 +62,8 @@ class GlobalFlashGalleriesControllerComponent extends JControllerLegacy
 		$adminDirBackup = globalflash_adminDir.'~';
 		$frontendDirBackup = globalflash_frontendDir.'~';
 
+		jimport('joomla.filesystem.folder');
+
 		if ( is_dir($adminDirBackup) )
 			JFolder::delete($adminDirBackup);
 
@@ -94,6 +96,7 @@ class GlobalFlashGalleriesControllerComponent extends JControllerLegacy
 	{
 		$xmlCacheDir = globalflash_tmpDir.DS.'xml';
 		if (is_dir($xmlCacheDir)) {
+			jimport('joomla.filesystem.folder');
 			$files = JFolder::files($xmlCacheDir, '\d+\.xml$', false, true);
 			if (!empty($files)) {
 				foreach ($files as $file)

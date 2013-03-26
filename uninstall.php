@@ -8,6 +8,8 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 
 include_once dirname(__FILE__).DS.'defines.php';
 
+jimport('joomla.filesystem.folder');
+
 if ( is_dir(globalflash_imagesDir) )
 	JFolder::delete(globalflash_imagesDir);
 
