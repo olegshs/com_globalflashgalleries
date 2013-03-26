@@ -7,10 +7,10 @@
 	<authorUrl>http://flash-gallery.com/</authorUrl>
 	<copyright>Copyright (c) 2010-2013 Mediaparts Interactive</copyright>
 	<license>GNU/GPL http://www.gnu.org/licenses/gpl.html</license>
-	<version>0.9.1</version>
-	<releaseDate>2013-03-06</releaseDate>
+	<version>0.9.2</version>
+	<releaseDate>2013-03-26</releaseDate>
 	<releaseType>Minor update</releaseType>
-	<downloadUrl>http://flash-gallery.com/update/get/com_globalflashgalleries-0.9.1.zip</downloadUrl>
+	<downloadUrl>http://flash-gallery.com/update/get/com_globalflashgalleries-0.9.2.zip</downloadUrl>
 	<description>Global Flash Galleries Component for Joomla!</description>
 
 	<installfile>install.php</installfile>
