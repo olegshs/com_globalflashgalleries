@@ -15,7 +15,7 @@ function findColumn( $columns, $name )
 	return false;
 }
 
-$db =& JFactory::getDBO();
+$db = JFactory::getDBO();
 
 $db->setQuery("SHOW COLUMNS FROM `#__globalflash_galleries`");
 $columns = $db->loadObjectList();

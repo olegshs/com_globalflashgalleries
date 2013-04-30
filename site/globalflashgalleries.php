@@ -6,6 +6,8 @@
 
 defined('_JEXEC') or die('Restricted access');	// No direct access
 
+error_reporting(0);
+
 require_once dirname(__FILE__).'/defines.php';
 
 // Require the base controller

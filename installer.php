@@ -55,7 +55,7 @@ class com_globalflashgalleriesInstallerScript
 	 * @return  boolean  True on success
 	 */
 	function update($adapter) {
-		$db =& JFactory::getDBO();
+		$db = JFactory::getDBO();
 		
 		$db->setQuery("SHOW COLUMNS FROM `#__globalflash_galleries`");
 		$columns = $db->loadObjectList();
