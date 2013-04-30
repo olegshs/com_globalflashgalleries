@@ -64,7 +64,8 @@ if (!$transparent) {
 		height: '<?php echo $height; ?>',
 		images: { folder:'<?php echo globalflash_frontendURL.'/images' ?>' },
 		config: '<?php echo $xmlURL; ?>',
-		configType: 'xml'
+		configType: 'xml',
+		fullscreen: 'never'
 	}, '#<?php echo $flashID; ?> .globalflash-altcontent');
 //]]></script>
 <!-- /com_globalflashgalleries -->

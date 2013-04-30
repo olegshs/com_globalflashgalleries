@@ -122,7 +122,8 @@ if (!empty($margin))
 		height: '<?php echo $height; ?>',
 		images: { folder:'<?php echo globalflash_frontendURL.'/images' ?>' },
 		config: '<?php echo $xmlURL; ?>',
-		configType: 'xml'
+		configType: 'xml',
+		fullscreen: 'never'
 	}, '#<?php echo $uniqueFlashID; ?> .globalflash-altcontent');
 //]]></script>
 <!-- /com_globalflashgalleries -->
