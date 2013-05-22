@@ -75,21 +75,21 @@ class GlobalFlashGalleriesModelImage extends JModelLegacy
 
 		$row =& $this->getTable();
 
-		// Bind the form fields to the Galleries table
+		// Bind the form fields to the Images table
 		if ( !$row->bind($data) )
 		{
 			$this->setError( $this->_db->getErrorMsg() );
 			return false;
 		}
 
-		// Make sure the Gallery record is valid
+		// Make sure the Image record is valid
 		if ( !$row->check() )
 		{
 			$this->setError( $this->_db->getErrorMsg() );
 			return false;
 		}
 
-		// Store to database
+		// Store to the database
 		if ( !$row->store() )
 		{
 			$this->setError( $row->getErrorMsg() );

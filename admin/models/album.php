@@ -89,21 +89,21 @@ class GlobalFlashGalleriesModelAlbum extends JModelLegacy
 
 		$row =& $this->getTable();
 
-		// Bind the form fields to the Galleries table
+		// Bind the form fields to the Albums table
 		if ( !$row->bind($data) )
 		{
 			$this->setError( $this->_db->getErrorMsg() );
 			return false;
 		}
 
-		// Make sure the Gallery record is valid
+		// Make sure the Album record is valid
 		if ( !$row->check() )
 		{
 			$this->setError( $this->_db->getErrorMsg() );
 			return false;
 		}
 
-		// Store the web link table to the database
+		// Store to the database
 		if ( !$row->store() )
 		{
 			$this->setError( $row->getErrorMsg() );
