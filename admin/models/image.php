@@ -75,7 +75,7 @@ class GlobalFlashGalleriesModelImage extends JModelLegacy
 
 		$row =& $this->getTable();
 
-		// Bind the form fields to the Galleries table
+		// Bind the form fields to Galleries table
 		if ( !$row->bind($data) )
 		{
 			$this->setError( $this->_db->getErrorMsg() );
@@ -89,11 +89,18 @@ class GlobalFlashGalleriesModelImage extends JModelLegacy
 			return false;
 		}
 
-		// Store the web link table to the database
+		// Store to database
 		if ( !$row->store() )
 		{
 			$this->setError( $row->getErrorMsg() );
 			return false;
+		}
+
+		// Clear XML cache
+		$cacheFile = globalflash_tmpDir.DS.'xml'.DS."{$data['gallery_id']}.xml";
+		if ( is_file($cacheFile) )
+		{
+			unlink($cacheFile);
 		}
 
 		return true;
