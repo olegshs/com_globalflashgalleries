@@ -4,6 +4,11 @@
 		<title>Caption</title>
 		<description></description>
 		<items>
+			<param name="showCaption" default="true">
+				<title>Show Caption</title>
+				<description></description>
+				<input type="checkbox" value="true|false" />
+			</param>
 			<param name="color" default="000000">
 				<title>Caption Color</title>
 				<description>Color of image captions</description>

@@ -31,8 +31,10 @@ class GlobalFlashGalleriesViewXML extends JViewLegacy
 	function itemsXml( $items )
 	{
 		$itemsXml = '';
-		foreach ($items as $item)
-			$itemsXml .= $this->tpl->parse($this->xmlPath.$this->gallery->type.'-item', $item);
+		foreach ($items as $item) {
+			$itemData = array_merge($this->settings, get_object_vars($item));
+			$itemsXml .= $this->tpl->parse($this->xmlPath.$this->gallery->type.'-item', $itemData);
+		}
 
 		return $itemsXml;
 	}

@@ -1,2 +1,2 @@
 
-		<item source="{thumbnail}" description="{description}" link="{link}" target="{target}" />
+		<item source="{thumbnail}"{TRUE caption.showCaption} description="{description}"{/TRUE} link="{link}" target="{target}" />

@@ -77,7 +77,8 @@ if ($multipleAlbums)
 			$item->link = htmlspecialchars($item->link);
 			$item->target = htmlspecialchars($item->target);
 
-			$items .= $tpl->parse($xmlPath.$gallery->type.'-item', $item);
+			$itemData = array_merge($settings, get_object_vars($item));
+			$items .= $tpl->parse($xmlPath.$gallery->type.'-item', $itemData);
 		}
 		$album->items = $items;
 
@@ -104,7 +105,8 @@ else
 		$item->link = htmlspecialchars($item->link);
 		$item->target = htmlspecialchars($item->target);
 
-		$a['items'] .= $tpl->parse($xmlPath.$gallery->type.'-item', $item);
+		$itemData = array_merge($settings, get_object_vars($item));
+		$a['items'] .= $tpl->parse($xmlPath.$gallery->type.'-item', $itemData);
 	}
 }
 
