@@ -29,15 +29,12 @@ if (class_exists('JFormFieldList'))	// Joomla 1.6
 			$db =& JFactory::getDBO();
 			$db->setQuery("
 				SELECT
-					g.`id`, g.`title`
+					`id`, `title`
 				FROM
-					`#__globalflash_galleries` g,
-					`#__globalflash_images` i
+					`#__globalflash_galleries`
 				WHERE
-					g.`published` > 0 AND
-					i.`gallery_id` = g.`id`
-				GROUP BY g.`id`
-				ORDER BY g.`title`
+					`published` > 0
+				ORDER BY `title`
 			");
 			$galleries = $db->loadObjectList();
 
@@ -61,15 +58,12 @@ elseif (class_exists('JElement'))	// Joomla 1.5
 
 			$db->setQuery("
 				SELECT
-					g.`id`, g.`title`
+					`id`, `title`
 				FROM
-					`#__globalflash_galleries` g,
-					`#__globalflash_images` i
+					`#__globalflash_galleries`
 				WHERE
-					g.`published` > 0 AND
-					i.`gallery_id` = g.`id`
-				GROUP BY g.`id`
-				ORDER BY g.`title`
+					`published` > 0
+				ORDER BY `title`
 			");
 			$options = $db->loadObjectList();
 
