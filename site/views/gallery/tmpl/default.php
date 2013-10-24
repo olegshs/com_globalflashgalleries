@@ -94,26 +94,7 @@ if (!empty($margin))
 <!-- com_globalflashgalleries <?php echo globalflash_version; ?> -->
 <div class="<?php echo $flashID; ?> globalflash-gallery"<?php if (!empty($style)) echo " style=\"{$style}\""; ?>>
 <div style="<?php echo $style2; ?>">
-<?php
-	$this->ui->flash(
-		$uniqueFlashID,
-		$this->swfURL,
-		'100%',
-		'100%',
-		array(
-			'flashVars' => 'XMLFile='.str_replace('&', '%26', $xmlURL),
-			'allowFullScreen' => 'true',
-			'allowScriptAccess' => 'always',
-			'wmode' => $wmode,
-			'bgColor' => $bgcolor,
-			'quality' => 'high',
-			'swfversion' => '9.0.45.0',
-			'expressinstall' => globalflash_frontendURL.'/js/swfobject/expressInstall.swf'
-		),
-		$this->altContent,
-		true
-	);
-?>
+    <div id="<?php echo $uniqueFlashID; ?>"><?php echo $this->altContent; ?></div>
 </div>
 </div>
 <script type="text/javascript">//<![CDATA[
