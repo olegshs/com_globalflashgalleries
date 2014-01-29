@@ -120,21 +120,12 @@ jQuery(document).ready(function($) {
 		});
 	});
 
-	$('#select-albums a.select-album').toggle(
-		function() {
-			var images = loadImages(this);
-			images.css({ display:'block' });
+	$('#select-albums a.select-album').click(function() {
+		var images = loadImages(this);
+		images.toggle();
 
-			return false;
-		},
-		function() {
-			var images = loadImages(this);
-			images.css({ display:'none' });
-
-			return false;
-		}
-	);
-
+		return false;
+	});
 });
 //]]></script>
 
