@@ -10,7 +10,7 @@ defined('_JEXEC') or die('Restricted access');
 <div class="com_globalflashgalleries">
 
 <script type="text/javascript">//<![CDATA[
-	jQuery('#selectImages').css({ background:'none' });
+	jQuery('#selectImages').css({ background:'none', position:'static' });
 	jQuery('#select-images-form').fadeIn(500);
 //]]></script>
 
