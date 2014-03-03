@@ -330,10 +330,10 @@ div.com_globalflashgalleries {
 	width: 640px;
 	padding: 35px;
 	font-size: 11px;
-	background-image: url(../images/overlay.white.png);
+	background-image: url(../images/overlay.white.png) !important;
 }
 .com_globalflashgalleries .preview .overlay.black {
-	background-image: url(../images/overlay.black.png);
+	background-image: url(../images/overlay.black.png) !important;
 }
 .com_globalflashgalleries .preview .overlay .close {
 	background-image: url(../images/overlay.close.png);

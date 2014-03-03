@@ -9,6 +9,11 @@
  * Since: March 2008
  * Date:    Wed Sep 22 06:02:10 2010 +0000 
  */
+
+if(typeof jQuery.browser=='undefined'){
+(function(){var a,c;a=navigator.userAgent;a=a.toLowerCase();c=/(chrome)[ \/]([\w.]+)/.exec(a)||/(webkit)[ \/]([\w.]+)/.exec(a)||/(opera)(?:.*version|)[ \/]([\w.]+)/.exec(a)||/(msie) ([\w.]+)/.exec(a)||0>a.indexOf("compatible")&&/(mozilla)(?:.*? rv:([\w.]+)|)/.exec(a)||[];a=c[1]||"";c=c[2]||"0";var b={};a&&(b[a]=!0,b.version=c);b.chrome?b.webkit=!0:b.webkit&&(b.safari=!0);jQuery.browser=b})();
+}
+
 (function($) { 
 
 	// static constructs

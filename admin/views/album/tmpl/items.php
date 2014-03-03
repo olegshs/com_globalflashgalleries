@@ -134,16 +134,14 @@ else
 		revert: 200
 	});
 
-	$(".images .item .preview a")
-		.overlay({
+	$(".images .item .preview a").overlay({
 			effect: 'apple',
 			mask: {
 				color: '#000000',
 				loadSpeed: 500,
 				opacity: 0.7
 			}
-		})
-		.click(function() {
+		}).click(function() {
 			$(this).parents('.preview').find('.overlay img').attr('src', this.href);
 			return false;
 		});

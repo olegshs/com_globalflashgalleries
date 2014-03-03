@@ -86,11 +86,8 @@ defined('_JEXEC') or die('Restricted access');
 			<script type="text/javascript">//<![CDATA[
 				jQuery(document).ready(function($) {
 					$('#album-add_items').tabs({
-						fx: { opacity: 'toggle', duration: 'fast' },
-						show: function(event, ui) {
-							$('#album-add_items').show();
-						}
-					});
+						fx: { opacity: 'toggle', duration: 'fast' }
+					}).show();;
 				});
 			//]]></script>
 		</div>
