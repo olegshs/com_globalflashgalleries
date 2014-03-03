@@ -128,9 +128,6 @@ jQuery(document).ready(function($) {
 
 	$('#flashSettings').tabs({
 		//event: 'mouseover',
-		fx: { opacity: 'toggle', duration: 'fast' },
-		show: function(event, ui) {
-			document.getElementById('flashSettings').style.visibility = 'visible';
-		}
-	});
+		fx: { opacity: 'toggle', duration: 'fast' }
+	}).css({ visibility: 'visible' });
 });
