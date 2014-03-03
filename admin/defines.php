@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');	// No direct access
 if (!defined('DS'))
 	define('DS', DIRECTORY_SEPARATOR);
 
-define( 'globalflash_version',		'0.9.7' );
+define( 'globalflash_version',		'0.9.8' );
 define( 'globalflash_debug',		false );
 
 $jversion = new JVersion();
