@@ -15,8 +15,7 @@ CREATE TABLE IF NOT EXISTS `#__globalflash_galleries` (
 	`modified_by`	int unsigned NOT NULL DEFAULT '0',
 	`published`		tinyint(1) unsigned NOT NULL DEFAULT '0',
 	`order`			int NOT NULL DEFAULT '0',
-	INDEX			(`order`, `type`, `created`, `created_by`, `modified`),
-	INDEX			(`title`)
+	INDEX			(`created`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `#__globalflash_settings` (
@@ -25,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `#__globalflash_settings` (
 	`gallery_type`	varchar(20) NOT NULL,
 	`name`			varchar(255) NOT NULL,
 	`value`			varchar(255) NOT NULL,
-	INDEX			(`gallery_id`, `gallery_type`, `name`)
+	INDEX			(`gallery_id`, `gallery_type`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS `#__globalflash_albums` (
@@ -37,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `#__globalflash_albums` (
 	`modified`		datetime NOT NULL DEFAULT '2010-01-01 00:00:00',
 	`modified_by`	int unsigned NOT NULL DEFAULT '0',
 	`order`			int NOT NULL DEFAULT '0',
-	INDEX 			(`order`, `created`, `created_by`, `modified`),
+	INDEX 			(`created`),
 	INDEX			(`title`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 
@@ -56,7 +55,8 @@ CREATE TABLE IF NOT EXISTS `#__globalflash_images` (
 	`height`		int unsigned NOT NULL DEFAULT '0',
 	`size`			int unsigned NOT NULL DEFAULT '0',
 	`order`			int NOT NULL DEFAULT '0',
-	INDEX			(`order`, `album_id`, `gallery_id`, `type`, `size`),
+	INDEX			(`order`),
+	INDEX			(`gallery_id`, `album_id`),
 	INDEX			(`path`),
 	INDEX			(`title`)
 ) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
