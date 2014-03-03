@@ -217,7 +217,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 			else
 				$item->description = $item->title;
 
-			$item->description = htmlspecialchars($item->description);
+			$item->description = htmlspecialchars($item->description, ENT_QUOTES);
 
 			if (isset($this->settings['lightbox.useLightbox']) && $this->settings['lightbox.useLightbox'] == 'true' && (empty($item->link) || $this->settings['lightbox.overrideLinks'] == 'true'))
 			{
@@ -303,7 +303,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 
 		return "<div class='globalflash-altcontent'><ul>{$altContent}\n\t</ul></div>";
 	}
-	
+
 	function &getSettingsInfo()
 	{
 		if ( !isset($this->settingsInfo) && !empty($this->_data->type) )

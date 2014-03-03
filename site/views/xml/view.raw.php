@@ -110,6 +110,8 @@ class GlobalFlashGalleriesViewXML extends JViewLegacy
 				if ( !empty($results[0]) )
 					$xml = $results[0];
 
+				$xml = str_replace("\r\n", "\n", $xml);
+
 				if ($xmlCache)
 				{
 					$xmlCacheDir = dirname($xmlCachePath);

@@ -310,7 +310,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 			else
 				$item->description = $item->title;
 
-			$item->description = htmlspecialchars($item->description);
+			$item->description = htmlspecialchars($item->description, ENT_QUOTES);
 
 			if (isset($this->settings['lightbox.useLightbox']) && $this->settings['lightbox.useLightbox'] == 'true' && (empty($item->link) || $this->settings['lightbox.overrideLinks'] == 'true'))
 			{
