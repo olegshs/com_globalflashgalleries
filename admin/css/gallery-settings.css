@@ -1,5 +1,5 @@
 /**
- * @copyright   Copyright (c) 2010-2013 Mediaparts Interactive. All rights reserved.
+ * @copyright   Copyright (c) 2010-2014 Mediaparts Interactive. All rights reserved.
  * @license     GNU/GPL http://www.gnu.org/licenses/gpl.html
  */
 
