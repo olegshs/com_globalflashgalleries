@@ -62,8 +62,8 @@
 			stopAutoOnClick="{slideshow.stopAutoOnClick}"
 		/>
 		<sounds
-			onRollOver="{soundsFolder}{sounds.onRollOver}"
-			onClick="{soundsFolder}{sounds.onClick}"
+			onRollOver="{sounds.onRollOver}"
+			onClick="{sounds.onClick}"
 		/>
 		<loader>{loader}</loader>
 	</settings>

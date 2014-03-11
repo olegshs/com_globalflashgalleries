@@ -61,7 +61,7 @@
 			slideshowButton="{buttons.slideshowButton}"
 		/>
 		<sounds
-			onRollOver="{soundsFolder}{sounds.onRollOver}"
+			onRollOver="{sounds.onRollOver}"
 			onClick="{sounds.onClick}"
 		/>
 		<loader>{loader}</loader>
