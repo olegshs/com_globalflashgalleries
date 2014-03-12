@@ -47,11 +47,13 @@ if ( !empty($this->options) )
 		}
 	}
 
-	if (!empty($this->options['width']))
+	if (!empty($this->options['width'])) {
 		$width = $this->options['width'];
+	}
 
-	if (!empty($this->options['height']))
+	if (!empty($this->options['height'])) {
 		$height = $this->options['height'];
+	}
 
 	if (!empty($this->options['bgcolor'])) {
 		$bgcolor = $this->options['bgcolor'];
@@ -68,8 +70,9 @@ if ( !empty($this->options) )
 		$transparent = false;
 	}
 
-	if (!empty($this->options['style']))
+	if (!empty($this->options['style'])) {
 		$style[] = $this->options['style'];
+	}
 }
 
 $wmode = empty($bgimage) && !$transparent && strlen($bgcolor) == 7 ? 'opaque' : 'transparent';
@@ -86,8 +89,9 @@ if (!$transparent) {
 		$style2 .= " url('{$bgimage}') repeat center";
 	$style2 .= ';';
 }
-if (!empty($margin))
+if (!empty($margin)) {
 	$style2 .= " margin: {$margin};";
+}
 
 ?>
 
@@ -123,7 +127,26 @@ if (!empty($margin))
 		images: { folder:'<?php echo globalflash_frontendURL.'/images' ?>' },
 		config: '<?php echo $xmlURL; ?>',
 		configType: 'xml',
-		fullscreen: 'never'
+		fullscreen: 'never',
+		callback: function(gallery) {
+			var container = gallery.canvas.element.parents('.globalflash-gallery').children('div');
+			var parent = container.parent();
+			var initialWidth = container.width();
+			var prevWidth;
+			container.css({
+				width: '',
+				height: ''
+			});
+			function scale() {
+				var parentWidth = parent.width();
+				if (parentWidth != prevWidth) {
+					gallery.canvas.scale(parentWidth / initialWidth);
+					prevWidth = parentWidth;
+				}
+			}
+			scale();
+			jQuery(window).resize(scale);
+		}
 	}, '#<?php echo $uniqueFlashID; ?> .globalflash-altcontent');
 //]]></script>
 <!-- /com_globalflashgalleries -->
