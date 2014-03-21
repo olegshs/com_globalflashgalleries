@@ -102,8 +102,8 @@ if (!empty($margin)) {
 	$this->ui->flash(
 		$uniqueFlashID,
 		$this->swfURL,
-		'100%',
-		'100%',
+		$width,
+		$height,
 		array(
 			'flashVars' => 'XMLFile='.str_replace('&', '%26', $xmlURL),
 			'allowFullScreen' => 'true',
@@ -121,32 +121,36 @@ if (!empty($margin)) {
 </div>
 </div>
 <script type="text/javascript">//<![CDATA[
-	altgallery({
-		width: '<?php echo $width; ?>',
-		height: '<?php echo $height; ?>',
-		images: { folder:'<?php echo globalflash_frontendURL.'/images' ?>' },
-		config: '<?php echo $xmlURL; ?>',
-		configType: 'xml',
-		fullscreen: 'never',
-		callback: function(gallery) {
-			var container = gallery.canvas.element.parents('.globalflash-gallery').children('div');
-			var parent = container.parent();
-			var initialWidth = container.width();
-			var prevWidth;
-			container.css({
-				width: '',
-				height: ''
-			});
-			function scale() {
-				var parentWidth = parent.width();
-				if (parentWidth != prevWidth) {
-					gallery.canvas.scale(parentWidth / initialWidth);
-					prevWidth = parentWidth;
+jQuery(document).ready(function($) {
+	if (!swfobject.hasFlashPlayerVersion('9.0.45.0')) {
+		altgallery({
+			width: '<?php echo $width; ?>',
+			height: '<?php echo $height; ?>',
+			images: { folder:'<?php echo globalflash_frontendURL.'/images' ?>' },
+			config: '<?php echo $xmlURL; ?>',
+			configType: 'xml',
+			fullscreen: 'never',
+			callback: function(gallery) {
+				var container = gallery.canvas.element.parents('.globalflash-gallery').children('div');
+				var parent = container.parent();
+				var initialWidth = container.width();
+				var prevWidth;
+				container.css({
+					width: '',
+					height: ''
+				});
+				function scale() {
+					var parentWidth = parent.width();
+					if (parentWidth != prevWidth) {
+						gallery.canvas.scale(parentWidth / initialWidth);
+						prevWidth = parentWidth;
+					}
 				}
+				scale();
+				$(window).resize(scale);
 			}
-			scale();
-			jQuery(window).resize(scale);
-		}
-	}, '#<?php echo $uniqueFlashID; ?> .globalflash-altcontent');
+		}, '#<?php echo $uniqueFlashID; ?> .globalflash-altcontent');
+	}
+});
 //]]></script>
 <!-- /com_globalflashgalleries -->

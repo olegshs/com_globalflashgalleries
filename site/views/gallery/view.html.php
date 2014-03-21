@@ -23,6 +23,7 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 		if ($gallery->published)
 		{
 			$document =& JFactory::getDocument();
+			$document->addScript( globalflash_frontendURL.'/js/swfobject/swfobject.js' );
 			$document->addScript( globalflash_frontendURL.'/js/jquery/jquery.js' );
 
 			JPluginHelper::importPlugin('globalflashgalleries');

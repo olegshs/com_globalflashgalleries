@@ -461,11 +461,12 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 
 		$altContent = '';
 		if (!empty($items)) {
-			foreach ($items as $item)
-				$altContent .= "\n\t\t<li><a href='{$item->source}'><img src='{$item->thumbnail}' alt='{$item->description}' /></a></li>";
+			foreach ($items as $item) {
+				$altContent .= "\n\t\t<li style='display:inline;'><a href='{$item->source}'><img src='{$item->thumbnail}' alt='{$item->description}' /></a></li>";
+			}
 		}
 
-		return "<div class='globalflash-altcontent'><ul>{$altContent}\n\t</ul></div>";
+		return "<div class='globalflash-altcontent' style='list-style:none;'><ul>{$altContent}\n\t</ul></div>";
 	}
 
 	function &getSettingsInfo()
