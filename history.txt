@@ -1,91 +1,112 @@
---- 0.10.1 ---
+0.10.2
+------
+4 Jul 2014
+
++ Updated galleries (Flickr fix)
+
+
+0.10.1
+------
 24 Mar 2014
 
 + Auto-resizing of mobile galleries
 + Bugs fixed
 
 
---- 0.9.8 ---
+0.9.8
+-----
 3 Mar 2014
 
 + Bugs fixed
 
 
---- 0.9.7 ---
+0.9.7
+-----
 23 Dec 2013
 
 + Joomla 3.1+ compatibility
 + Bugs fixed
 
 
---- 0.9.5 ---
+0.9.5
+-----
 24 Oct 2013
 
 + JavaScript galleries: Flickr support, bugs fixed
 
 
---- 0.9.4 ---
+0.9.4
+-----
 22 May 2013
 
 + New option in Stack gallery: Caption > Show Caption
 + Clear XML cache after image has been changed
 
 
---- 0.9.3 ---
+0.9.3
+-----
 30 Apr 2013
 
 + Updated galleries
 + Bugs fixed
 
 
---- 0.9.2 ---
+0.9.2
+-----
 26 Mar 2013
 
 + Bugs fixed
 
 
---- 0.9.1 ---
+0.9.1
+-----
 6 Mar 2013
 
 + Bugs fixed
 
 
---- 0.9.0 ---
+0.9.0
+-----
 7 Feb 2013
 
 + Joomla 3.0 compatibility
 + Updated galleries
 
 
---- 0.8.2 ---
+0.8.2
+-----
 3 Oct 2012
 
 + Updated galleries
 
 
---- 0.8.1 ---
+0.8.1
+-----
 16 Jul 2012
 
 + Updated galleries
 + Import/Export settings
-+ Bug fixes
++ Bugs fixed
 
 
---- 0.8.0 ---
+0.8.0
+-----
 4 Jun 2012
 
 + New Aura Gallery
 + Minor bug fixes
 
 
---- 0.7.2 ---
+0.7.2
+-----
 14 May 2012
 
 + Updated galleries
 + Bugs fixed
 
 
---- 0.7.1 ---
+0.7.1
+-----
 29 Mar 2012
 
 + Ability to use images from Picasa and Flickr
@@ -94,20 +115,23 @@
 + Bugs fixed
 
 
---- 0.7.0 ---
+0.7.0
+-----
 29 Feb 2012
 
 + New Cubic Gallery
 
 
---- 0.6.6 ---
+0.6.6
+-----
 2 Feb 2012
 
 + Updated PhotoFlow gallery
 + Bugs fixed
 
 
---- 0.6.5 ---
+0.6.5
+-----
 26 Dec 2011
 
 + Updated galleries
@@ -115,7 +139,8 @@
 + Bugs fixed
 
 
---- 0.6.4 ---
+0.6.4
+-----
 12 Dec 2011
 
 + French localization is now compatible with Joomla 1.7
@@ -123,26 +148,30 @@
 + Bugs fixed
 
 
---- 0.6.3 ---
+0.6.3
+-----
 5 Dec 2011
 
 + Updated galleries
 + New options in Art gallery: transitionEffect=squares, transitionDuration
 
 
---- 0.6.2 ---
+0.6.2
+-----
 13 Oct 2011
 
 + New 3D Gallery
 
 
---- 0.6.1 ---
+0.6.1
+-----
 15 Sep 2011
 
 + Lightbox feature for Line, PhotoFlow, 3D Wall
 
 
---- 0.6.0 ---
+0.6.0
+-----
 1 Sep 2011
 
 + Updated galleries
@@ -151,7 +180,8 @@
 + Options > Quality of reduced images and thumbnails
 
 
---- 0.5.2 ---
+0.5.2
+-----
 22 Aug 2011
 
 + JavaScript gallery for browsers without Flash Player
@@ -161,7 +191,8 @@
 + Fixed bug in Zen settings panel
 
 
---- 0.5.1 ---
+0.5.1
+-----
 27 Jul 2011
 
 + Updated galleries
@@ -171,7 +202,8 @@
 + XML caching
 
 
---- 0.5.0 ---
+0.5.0
+-----
 1 Jul 2011
 
 + Important security update!
@@ -180,7 +212,8 @@
 + Improved PHP 4 compatibility
 
 
---- 0.4.4 ---
+0.4.4
+-----
 9 Jun 2011
 
 + Zen: Translation, Show Caption, Show Buttons
@@ -188,21 +221,24 @@
 + Updated galleries
 
 
---- 0.4.3 ---
+0.4.3
+-----
 20 May 2011
 
 + Checking available memory then resizing the images
 + Bugs fixed
 
 
---- 0.4.2 ---
+0.4.2
+-----
 13 May 2011
 
 + Better compatibility with IE
 + Bugs fixed
 
 
---- 0.4.1 ---
+0.4.1
+-----
 5 May 2011
 
 + New Line Gallery
@@ -210,26 +246,30 @@
 + Minor bug fixes
 
 
---- 0.4.0 ---
+0.4.0
+-----
 19 Apr 2011
 
 + Updated galleries
 + Support for installation on the databases with no charset
 
 
---- 0.3.6 ---
+0.3.6
+-----
 4 Apr 2011
 
 + Bug fixed: color picker displayed incorrectly.
 
 
---- 0.3.5 ---
+0.3.5
+-----
 2 Mar 2011
 
 + Improved compatibility.
 
 
---- 0.3.4 ---
+0.3.4
+-----
 22 Feb 2011
 
 + Multiple albums in Zen gallery.
@@ -237,47 +277,54 @@
 + Preview images in albums.
 
 
---- 0.3.3 ---
+0.3.3
+-----
 7 Feb 2011
 
 + Joomla 1.6.0 compatibility.
 + Correct handling of transparent PNG images.
 
 
---- 0.3.2 ---
+0.3.2
+-----
 22 Dec 2010
 
 + Bug fixed: On some hosts the thumbnails are not displayed.
 
 
---- 0.3.1 ---
+0.3.1
+-----
 11 Nov 2010
 
 + Importing images from a directory
 + Minor bug fixes
 
 
---- 0.3.0 ---
+0.3.0
+-----
 8 Sep 2010
 
 + PHP 4 compatibility
 + Bug fixed: Some settings are not applied to PhotoFlow gallery.
 
 
---- 0.2.9 ---
+0.2.9
+-----
 15 Aug 2010
 
 + French translation
 
 
---- 0.2.8 ---
+0.2.8
+-----
 9 Aug 2010
 
 + Added new image properties: Link, Target
 
 
---- 0.2.6 ---
+0.2.6
+-----
 30 Jul 2010
 
 + Internationalization
-+ Minor bug fixes
++ Minor bugs fixed
