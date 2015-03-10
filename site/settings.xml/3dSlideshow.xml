@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <settings>
-	<param name="slideshowDelay" default="2">
+	<param name="slideshowDelay" default="3">
 		<title>Slideshow Delay</title>
 		<description></description>
 		<input type="slider" min="1" max="30" />
