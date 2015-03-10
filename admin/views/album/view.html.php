@@ -15,7 +15,9 @@ class GlobalFlashGalleriesViewAlbum extends JViewLegacy
 
 		$document =& JFactory::getDocument();
 		$document->addStyleSheet( globalflash_adminURL.'/css/jquery/jquery-ui.css', 'text/css', null, array() );
-		$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
+		if (!globalflash_joomla3) {
+			$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
+		}
 		$document->addScript( globalflash_adminURL.'/js/jquery/jquery-ui.js' );
 		$document->addScript( globalflash_adminURL.'/js/jquery-tools/overlay.js' );
 		$document->addScript( globalflash_adminURL.'/js/jquery-tools/overlay.apple.js' );

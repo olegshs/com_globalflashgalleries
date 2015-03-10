@@ -11,7 +11,9 @@ class GlobalFlashGalleriesViewOptions extends JViewLegacy
 	function display( $tpl = null )
 	{
 		$document =& JFactory::getDocument();
-		$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
+		if (!globalflash_joomla3) {
+			$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
+		}
 
 		$title = JText::_('Options');
 		JToolBarHelper::title( JText::_('Flash Galleries').": <small>[ {$title} ]</small>", 'cpanel.png' );

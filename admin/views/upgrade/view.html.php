@@ -18,7 +18,9 @@ class GlobalFlashGalleriesViewUpgrade extends JViewLegacy
 		//JToolBarHelper::help('../upgrade.html', true);
 
 		$document =& JFactory::getDocument();
-		$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
+		if (!globalflash_joomla3) {
+			$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
+		}
 		$document->addStyleSheet( globalflash_adminURL.'/css/all.css', 'text/css', null, array() );
 
 		$update = (object)array(
