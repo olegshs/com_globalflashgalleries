@@ -13,7 +13,7 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 		if (globalflash_joomla3)
 			JHtml::_('bootstrap.framework');
 		
-		$document =& JFactory::getDocument();
+		$document = JFactory::getDocument();
 		$document->addStyleSheet( globalflash_adminURL.'/css/jquery/jquery-ui.css', 'text/css', null, array() );
 		$document->addStyleSheet( globalflash_adminURL.'/css/farbtastic/farbtastic.css', 'text/css', null, array() );
 		$document->addStyleSheet( globalflash_adminURL.'/css/gallery-settings.css', 'text/css', null, array() );
@@ -25,12 +25,12 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 		$document->addScript( globalflash_adminURL.'/js/farbtastic.js' );
 		$document->addScript( globalflash_adminURL.'/js/gallery-settings.js' );
 
-		$this->model =& $this->getModel();
+		$this->model = $this->getModel();
 
-		$gallery =& $this->get('Data');
+		$gallery = $this->get('Data');
 		$gallery->isNew = $isNew = $gallery->id < 1;
-		$gallery->settings =& $this->get('Settings');
-		$gallery->settingsInfo =& $this->get('SettingsInfo');
+		$gallery->settings = $this->get('Settings');
+		$gallery->settingsInfo = $this->get('SettingsInfo');
 
 		$title = $isNew ? JText::_('New Gallery') : JText::_('Edit Gallery');
 		JToolBarHelper::title( JText::_('Flash Galleries') .": <small>[ {$title} ]</small>", 'edit.png' );
@@ -46,7 +46,7 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 
 			if ( !empty($album_id) )
 			{
-				$db =& JFactory::getDBO();
+				$db = JFactory::getDBO();
 				$db->setQuery("
 					SELECT `title`, `description`
 					FROM `#__globalflash_albums`
@@ -81,11 +81,11 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 
 		$this->assignRef('gallery', $gallery);
 
-		$items =& $this->get('Items');
+		$items = $this->get('Items');
 		$this->assignRef('items', $items);
 
 		JPluginHelper::importPlugin('globalflashgalleries');
-		$dispatcher =& JDispatcher::getInstance();
+		$dispatcher = JDispatcher::getInstance();
 
 		if (!$isNew) {
 			$legacy = $dispatcher->trigger( 'onGenerateXMLfor'.$gallery->type, array('1') );

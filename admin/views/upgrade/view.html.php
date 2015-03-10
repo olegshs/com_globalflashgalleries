@@ -17,7 +17,7 @@ class GlobalFlashGalleriesViewUpgrade extends JViewLegacy
 		JToolBarHelper::title( JText::_('Global Flash Galleries Component') .": <small>[ {$title} ]</small>", 'cpanel.png' );
 		//JToolBarHelper::help('../upgrade.html', true);
 
-		$document =& JFactory::getDocument();
+		$document = JFactory::getDocument();
 		if (!globalflash_joomla3) {
 			$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
 		}

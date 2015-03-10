@@ -87,7 +87,7 @@ class GlobalFlashGalleriesModelAlbum extends JModelLegacy
 		if ( $data['id'] < 1 )
 			$data['created'] = $now;
 
-		$row =& $this->getTable();
+		$row = $this->getTable();
 
 		// Bind the form fields to the Albums table
 		if ( !$row->bind($data) )
@@ -126,12 +126,12 @@ class GlobalFlashGalleriesModelAlbum extends JModelLegacy
 
 		if ( count($cids) )
 		{
-			$row =& $this->getTable();
+			$row = $this->getTable();
 			foreach ($cids as $cid)
 			{
 				$this->setId($cid);
 				$this->getData();
-				$items =& $this->getItems();
+				$items = $this->getItems();
 
 				if ( $row->delete($cid) )
 				{

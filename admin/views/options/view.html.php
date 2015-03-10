@@ -10,7 +10,7 @@ class GlobalFlashGalleriesViewOptions extends JViewLegacy
 {
 	function display( $tpl = null )
 	{
-		$document =& JFactory::getDocument();
+		$document = JFactory::getDocument();
 		if (!globalflash_joomla3) {
 			$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
 		}

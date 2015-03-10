@@ -65,7 +65,7 @@ class GlobalFlashGalleriesController extends JControllerLegacy
 
 	function addStyleSheets()
 	{
-		$document =& JFactory::getDocument();
+		$document = JFactory::getDocument();
 		$document->addStyleSheet( JURI::base(true).'/components/com_globalflashgalleries/css/all.css', 'text/css', null, array() );
 		$document->addStyleSheet( JURI::base(true).'/components/com_globalflashgalleries/css/icons.css', 'text/css', null, array() );
 		

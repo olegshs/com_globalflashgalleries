@@ -10,10 +10,10 @@ class GlobalFlashGalleriesViewAlbums extends JViewLegacy
 {
 	function display( $tpl = null )
 	{
-		//$document =& JFactory::getDocument();
+		//$document = JFactory::getDocument();
 		//$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
 
-		$db =& JFactory::getDBO();
+		$db = JFactory::getDBO();
 
 		$db->setQuery("
 			SELECT *

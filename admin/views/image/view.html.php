@@ -10,10 +10,10 @@ class GlobalFlashGalleriesViewImage extends JViewLegacy
 {
 	function display( $tpl = null )
 	{
-		//$document =& JFactory::getDocument();
+		//$document = JFactory::getDocument();
 		//$document->addStyleSheet( globalflash_adminURL.'/css/icons.css', 'text/css', null, array() );
 
-		$image =& $this->get('Data');
+		$image = $this->get('Data');
 		$isNew = $image->id < 1;
 
 		$title = JText::_('Edit Image');

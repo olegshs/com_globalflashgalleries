@@ -73,7 +73,7 @@ class GlobalFlashGalleriesModelImage extends JModelLegacy
 	{
 		$data = JRequest::get('post');
 
-		$row =& $this->getTable();
+		$row = $this->getTable();
 
 		// Bind the form fields to the Images table
 		if ( !$row->bind($data) )
@@ -119,7 +119,7 @@ class GlobalFlashGalleriesModelImage extends JModelLegacy
 
 		if ( count($cids) )
 		{
-			$row =& $this->getTable();
+			$row = $this->getTable();
 
 			foreach ($cids as $cid)
 			{

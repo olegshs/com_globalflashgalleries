@@ -98,7 +98,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 		if ( $data['id'] < 1 )
 			$data['created'] = $now;
 
-		$row =& $this->getTable();
+		$row = $this->getTable();
 
 		// Bind the form fields to the Galleries table
 		if ( !$row->bind($data) )
@@ -141,13 +141,13 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 
 		if ( count($cids) )
 		{
-			$row =& $this->getTable();
+			$row = $this->getTable();
 
 			foreach ($cids as $cid)
 			{
 				$this->setId($cid);
 				$this->getData();
-				$items =& $this->getItems();
+				$items = $this->getItems();
 
 				if ( $row->delete($cid) )
 				{
@@ -457,7 +457,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 
 	function getAltContent()
 	{
-		$items =& $this->getItems();
+		$items = $this->getItems();
 
 		$altContent = '';
 		if (!empty($items)) {
@@ -474,7 +474,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 		if ( !isset($this->settingsInfo) && !empty($this->_data->type) )
 		{
 			JPluginHelper::importPlugin('globalflashgalleries');
-			$dispatcher =& JDispatcher::getInstance();
+			$dispatcher = JDispatcher::getInstance();
 			$legacy = $dispatcher->trigger( 'onGenerateXMLfor'.$this->_data->type, array('1') );
 
 			if ( empty($legacy[0]) )
@@ -553,7 +553,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 	{
 		if ( !isset($this->defaultSettings) )
 		{
-			$settingsInfo =& $this->getSettingsInfo();
+			$settingsInfo = $this->getSettingsInfo();
 
 			foreach ($settingsInfo as $param)
 				$this->defaultSettings[$param->name] = $param->default;
@@ -565,7 +565,7 @@ class GlobalFlashGalleriesModelGallery extends JModelLegacy
 	{
 		if ( !isset($this->settings) && !empty($this->_data->type) )
 		{
-			$this->settings =& $this->getDefaultSettings();
+			$this->settings = $this->getDefaultSettings();
 
 			$query = "
 				SELECT *

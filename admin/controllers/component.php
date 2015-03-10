@@ -45,7 +45,7 @@ class GlobalFlashGalleriesControllerComponent extends JControllerLegacy
 			if (!$p_file)
 				jexit('{ "status": "error", "error": "Unable to download" }');
 
-			$app =& JFactory::getApplication();
+			$app = JFactory::getApplication();
 			$tmp_dest = $app->getCfg('tmp_path');
 
 			// Unpack the downloaded package file

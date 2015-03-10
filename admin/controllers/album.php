@@ -144,7 +144,7 @@ class GlobalFlashGalleriesControllerAlbum extends GlobalFlashGalleriesController
 		jimport('joomla.filesystem.folder');
 		if ( JFolder::exists($destDir) || JFolder::create($destDir, 0777) )
 		{
-			$db =& JFactory::getDBO();
+			$db = JFactory::getDBO();
 
 			$db->setQuery("
 				SELECT MAX(`order`)
@@ -208,7 +208,7 @@ class GlobalFlashGalleriesControllerAlbum extends GlobalFlashGalleriesController
 			include_once JPATH_COMPONENT.DS.'inc'.DS.'tools.class.php';
 			$tools = new GlobalFlashGalleries_Tools();
 
-			$db =& JFactory::getDBO();
+			$db = JFactory::getDBO();
 
 			$db->setQuery("
 				SELECT MAX(`order`)

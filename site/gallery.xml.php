@@ -16,7 +16,7 @@ require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' );
 
 JDEBUG ? $_PROFILER->mark( 'afterLoad' ) : null;
 
-$mainframe =& JFactory::getApplication('site');
+$mainframe = JFactory::getApplication('site');
 
 
 require_once dirname(__FILE__).DS.'defines.php';
@@ -24,16 +24,16 @@ require_once dirname(__FILE__).DS.'defines.php';
 require_once globalflash_frontendDir.DS.'models'.DS.'gallery.php';
 $model = new GlobalFlashGalleriesModelGallery();
 
-$gallery =& $model->getData();
-$settings =& $model->getSettings();
-$items =& $model->getItems();
+$gallery = $model->getData();
+$settings = $model->getSettings();
+$items = $model->getItems();
 
 require_once globalflash_frontendDir.DS.'inc'.DS.'templates.class.php';
 $tpl = new GlobalFlashGalleries_Templates( globalflash_frontendDir.DS.'tpl' );
 
 jimport('joomla.plugin.helper');
 JPluginHelper::importPlugin('globalflashgalleries');
-$dispatcher =& JDispatcher::getInstance();
+$dispatcher = JDispatcher::getInstance();
 
 $legacy = $dispatcher->trigger( 'onGenerateXMLfor'.$gallery->type, array('1') );
 $xmlPath = empty($legacy[0]) ? 'xml/' : 'xml.legacy/';
@@ -116,7 +116,7 @@ if ( $gallery->type == 'PhotoFlow' && $a['colorScheme'] == 'custom' )
 $xml = $tpl->parse($xmlPath.$gallery->type, $a);
 
 
-$dispatcher =& JDispatcher::getInstance();
+$dispatcher = JDispatcher::getInstance();
 $results = $dispatcher->trigger( 'onGenerateXMLfor'.$gallery->type, array(&$xml) );
 
 if ( !empty($results[0]) )

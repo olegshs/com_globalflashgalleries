@@ -22,12 +22,12 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 
 		if ($gallery->published)
 		{
-			$document =& JFactory::getDocument();
+			$document = JFactory::getDocument();
 			$document->addScript( globalflash_frontendURL.'/js/swfobject/swfobject.js' );
 			$document->addScript( globalflash_frontendURL.'/js/jquery/jquery.js' );
 
 			JPluginHelper::importPlugin('globalflashgalleries');
-			$dispatcher =& JDispatcher::getInstance();
+			$dispatcher = JDispatcher::getInstance();
 
 			$altgallery = $dispatcher->trigger('getJS');
 			if (!empty($altgallery[0])) {
@@ -58,14 +58,15 @@ class GlobalFlashGalleriesViewGallery extends JViewLegacy
 
 			$this->assignRef('xmlURL', $xmlURL);
 
-			$this->assignRef('altContent', $this->model->getAltContent());
+			$altContent = $this->model->getAltContent();
+			$this->assignRef('altContent', $altContent);
 
 			require_once globalflash_frontendDir.DS.'inc'.DS.'ui.class.php';
 			$ui = new GlobalFlashGalleries_UI();
 			$this->assignRef('ui', $ui);
 
 			/*
-			$document =& JFactory::getDocument();
+			$document = JFactory::getDocument();
 			$document->addStyleSheet( globalflash_frontendURL.'/css/default.css' );
 			*/
 

@@ -167,7 +167,7 @@ defined('_JEXEC') or die('Restricted access');
 <?php
 	if (globalflash_joomla15) {
 		jimport('joomla.html.pane');
-		$pane =& JPane::getInstance('sliders');
+		$pane = JPane::getInstance('sliders');
 		echo $pane->startPane('pane');
 	}
 	else

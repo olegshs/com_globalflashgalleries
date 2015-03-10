@@ -138,7 +138,7 @@ class GlobalFlashGalleriesControllerGallery extends GlobalFlashGalleriesControll
 
 		$this->setRedirect('index.php?option=com_globalflashgalleries&controller=galleries');
 
-		$db =& JFactory::getDBO();
+		$db = JFactory::getDBO();
 
 		$task = JRequest::getCmd('task');
 		$publish = (int)($task == 'publish');
@@ -191,7 +191,7 @@ class GlobalFlashGalleriesControllerGallery extends GlobalFlashGalleriesControll
 
 		if ( count($images) )
 		{
-			$db =& JFactory::getDBO();
+			$db = JFactory::getDBO();
 
 			$items = array();
 			foreach ($images as $image_id)

@@ -41,7 +41,7 @@ class GlobalFlashGalleries_Options
 
 			if ( !isset($_globalflashgalleries_options[$name]) )
 			{
-				$db =& JFactory::getDBO();
+				$db = JFactory::getDBO();
 				
 				if (globalflash_joomla15)
 					$e_name = $db->getEscaped($name);
@@ -77,7 +77,7 @@ class GlobalFlashGalleries_Options
 		{
 			global $_globalflashgalleries_options;
 
-			$db =& JFactory::getDBO();
+			$db = JFactory::getDBO();
 			if (globalflash_joomla15) {
 				$e_name = $db->getEscaped($name);
 				$e_value = $db->getEscaped($value);

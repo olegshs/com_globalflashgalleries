@@ -50,7 +50,7 @@ class GlobalFlashGalleries_UI
 
 	function input( $input, $id, $name, $value = '', $args = array() )
 	{
-		$tpl =& $this->tpl;
+		$tpl = $this->tpl;
 
 		$before = isset($args['before']) ? $args['before'] : null;
 		unset($args['before']);

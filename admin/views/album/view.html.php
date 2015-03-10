@@ -13,7 +13,7 @@ class GlobalFlashGalleriesViewAlbum extends JViewLegacy
 		if (globalflash_joomla3)
 			JHtml::_('bootstrap.framework');
 
-		$document =& JFactory::getDocument();
+		$document = JFactory::getDocument();
 		$document->addStyleSheet( globalflash_adminURL.'/css/jquery/jquery-ui.css', 'text/css', null, array() );
 		if (!globalflash_joomla3) {
 			$document->addScript( globalflash_adminURL.'/js/jquery/jquery.js' );
@@ -23,7 +23,7 @@ class GlobalFlashGalleriesViewAlbum extends JViewLegacy
 		$document->addScript( globalflash_adminURL.'/js/jquery-tools/overlay.apple.js' );
 		$document->addScript( globalflash_adminURL.'/js/jquery-tools/toolbox.expose.js' );
 
-		$album =& $this->get('Data');
+		$album = $this->get('Data');
 		$album->isNew = $isNew = $album->id < 1;
 
 		$title = $isNew ? JText::_('New Album') : JText::_('Edit Album');
@@ -56,7 +56,7 @@ class GlobalFlashGalleriesViewAlbum extends JViewLegacy
 
 		$this->assignRef('album', $album);
 
-		$items =& $this->get('Items');
+		$items = $this->get('Items');
 		$this->assignRef('items', $items);
 
 		require_once globalflash_adminDir.DS.'inc'.DS.'ui.class.php';

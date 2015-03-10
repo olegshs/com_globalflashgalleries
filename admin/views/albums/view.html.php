@@ -15,7 +15,7 @@ class GlobalFlashGalleriesViewAlbums extends JViewLegacy
 		$title = JText::_('Manage Albums');
 		JToolBarHelper::title( JText::_('Flash Galleries').": <small>[ {$title} ]</small>", 'album.png' );
 
-		$items =& $this->get('Data');
+		$items = $this->get('Data');
 
 		if ( count($items) )
 		{

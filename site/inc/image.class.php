@@ -100,7 +100,7 @@ class GlobalFlashGalleries_Image
 	{
 		if ($this->_image !== false)
 		{
-			$src_image =& $this->_image;
+			$src_image = $this->_image;
 
 			$src_width = imagesx($src_image);
 			$src_height = imagesy($src_image);
@@ -133,7 +133,7 @@ class GlobalFlashGalleries_Image
 	{
 		if ($this->_image !== false)
 		{
-			$src_image =& $this->_image;
+			$src_image = $this->_image;
 
 			$src_width = imagesx($src_image);
 			$src_height = imagesy($src_image);

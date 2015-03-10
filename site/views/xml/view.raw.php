@@ -58,14 +58,14 @@ class GlobalFlashGalleriesViewXML extends JViewLegacy
 			}
 			else
 			{
-				$this->settings =& $model->getSettings();
-				$this->items =& $model->getItems();
+				$this->settings = $model->getSettings();
+				$this->items = $model->getItems();
 
 				require_once globalflash_frontendDir.DS.'inc'.DS.'templates.class.php';
 				$this->tpl = new GlobalFlashGalleries_Templates( globalflash_frontendDir.DS.'tpl' );
 
 				JPluginHelper::importPlugin('globalflashgalleries');
-				$dispatcher =& JDispatcher::getInstance();
+				$dispatcher = JDispatcher::getInstance();
 
 				$legacy = $dispatcher->trigger( 'onGenerateXMLfor'.$this->gallery->type, array('1') );
 				$this->xmlPath = empty($legacy[0]) ? 'xml/' : 'xml.legacy/';

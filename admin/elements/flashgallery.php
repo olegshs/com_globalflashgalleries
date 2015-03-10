@@ -26,7 +26,7 @@ if (class_exists('JFormFieldList'))	// Joomla 1.6
 		{
 			$options = array();
 
-			$db =& JFactory::getDBO();
+			$db = JFactory::getDBO();
 			$db->setQuery("
 				SELECT
 					`id`, `title`
@@ -54,7 +54,7 @@ elseif (class_exists('JElement'))	// Joomla 1.5
 	{
 		function fetchElement($name, $value, &$node, $control_name)
 		{
-			$db =& JFactory::getDBO();
+			$db = JFactory::getDBO();
 
 			$db->setQuery("
 				SELECT
