@@ -36,21 +36,20 @@ class GlobalFlashGalleries_Options
 
 	static function get( $name, $default = null )
 	{
-		if ( is_array($name) )
-		{
+		if (is_array($name)) {
 			$options = array();
-			foreach ($name as $key => $value)
-			{
-				if ( is_int($key) )
+			foreach ($name as $key => $value) {
+				if (is_int($key)) {
 					$options[$value] = self::get($value);
-				else
+				}
+				else {
 					$options[$key] = self::get($key, $value);
+				}
 			}
 
 			return $options;
 		}
-		else
-		{
+		else {
 			global $_globalflashgalleries_options;
 
 			if (!isset($_globalflashgalleries_options)) {
@@ -58,12 +57,12 @@ class GlobalFlashGalleries_Options
 			}
 
 			if (!isset($_globalflashgalleries_options[$name])) {
-				if ($value === null && $default === null) {
+				if ($default === null) {
 					$defaults = self::defaults();
-					$_globalflashgalleries_options[$name] = isset($defaults[$name]) ? $defaults[$name] : null;
+					return isset($defaults[$name]) ? $defaults[$name] : null;
 				}
 				else {
-					$_globalflashgalleries_options[$name] = $value === null ? $default : $value;
+					return $default;
 				}
 			}
 
