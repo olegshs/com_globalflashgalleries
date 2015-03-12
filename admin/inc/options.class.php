@@ -58,8 +58,6 @@ class GlobalFlashGalleries_Options
 			}
 
 			if (!isset($_globalflashgalleries_options[$name])) {
-				$value = $db->loadResult();
-
 				if ($value === null && $default === null) {
 					$defaults = self::defaults();
 					$_globalflashgalleries_options[$name] = isset($defaults[$name]) ? $defaults[$name] : null;
