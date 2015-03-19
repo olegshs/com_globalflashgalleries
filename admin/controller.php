@@ -25,6 +25,9 @@ class GlobalFlashGalleriesController extends JControllerLegacy
 
 	function display()
 	{
+		JHtml::_('jquery.framework');
+		JHtml::_('behavior.framework');
+
 		$this->addStyleSheets();
 		$this->addSubmenu();
 
